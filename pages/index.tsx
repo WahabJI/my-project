@@ -104,55 +104,62 @@ export default function Home() {
             </div>
             </a>       
           </section>
+          
+          <section>
+            <div className="flex">
 
-            {/* A div tag to place the follow text in the <p> below the vh of the screen using tailwindcss */}
-            <section id="projects" className="h-screen flex items-center">
+            </div>
+          </section>
 
-                <div className="flex flex-col gap-y-8 justify-center items-center">
-                  <h1 className="text-8xl text-beige">
-                    Projects
-                  </h1>
-                
 
-                <div className="grid grid-cols-10 grid-rows-3 text-white mx-16 pt-28">
-                    
-                  <div className="flex justify-center items-center w-100 h-100 hover:bg-light-blue col-span-1">
+          {/* A div tag to place the follow text in the <p> below the vh of the screen using tailwindcss */}
+          <section id="projects" className="backdrop-blur-sm h-screen flex items-center">
+
+              <div className="flex flex-col gap-y-8 justify-center items-center">
+                <h1 className="text-8xl text-beige">
+                  Projects
+                </h1>
+              
+
+              <div className="grid grid-cols-10 grid-rows-3 text-white mx-16 pt-28">
+                  
+                <div className="flex justify-center items-center w-100 h-100 col-span-1">
+                  <Image 
+                    src="/newspaper-outline-light.svg" alt="Linkedin Logo" width={200} height={200}
+                    className="object-fill"
+                    />
+                </div>
+                <p className="col-span-9 flex justify-center items-center hover:bg-light-blue leading-relaxed pl-8">2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla est ullamcorper eget nulla. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Blandit libero volutpat sed cras ornare arcu dui. Elementum tempus egestas sed sed risus. Purus in massa tempor nec feugiat nisl pretium fusce id. Eget nunc scelerisque viverra mauris in aliquam sem. Adipiscing elit duis tristique sollicitudin. Congue eu consequat ac felis donec et odio pellentesque diam. Non enim praesent elementum facilisis. Ipsum a arcu cursus vitae congue mauris rhoncus aenean. Pellentesque habitant morbi tristique senectus. Est placerat in egestas erat imperdiet sed euismod. Id eu nisl nunc mi ipsum. Integer eget aliquet nibh praesent tristique magna sit amet purus. Elementum eu facilisis sed odio morbi quis commodo odio. Mi quis hendrerit dolor magna.
+                </p>
+                <div className="flex justify-center items-center w-100 h-100 hover:text-beige col-span-1">
+                    <Image 
+                      src="/lofi-girl.gif" alt="Linkedin Logo" width={200} height={200}
+                      className="object-fill"
+                      />
+                </div>
+                <Link className="col-span-9 flex justify-center items-center hover:bg-light-blue pl-8" target="_blank" href="https://github.com/WahabJI/StudyUp/tree/main">
+                  <p>
+                    Utilized Typescript, Discord.js API, and MongoDB to implement a discord bot to create and keep track of events.
+                    Optimized bot to allow students to create or view, participate, add events to their calendar and book study rooms in the University of Houston Library.
+                    Helps to promote and organize group study sessions in student-run discord servers
+                  </p>
+                </Link>
+                <div className="flex justify-center items-center w-100 h-100 col-span-1">
                     <Image 
                       src="/plane.ico" alt="Linkedin Logo" width={200} height={200}
                       className="object-fill"
                       />
-                  </div>
-                  <p className="col-span-9 flex justify-center items-center hover:bg-light-blue leading-relaxed pl-8">2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla est ullamcorper eget nulla. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Blandit libero volutpat sed cras ornare arcu dui. Elementum tempus egestas sed sed risus. Purus in massa tempor nec feugiat nisl pretium fusce id. Eget nunc scelerisque viverra mauris in aliquam sem. Adipiscing elit duis tristique sollicitudin. Congue eu consequat ac felis donec et odio pellentesque diam. Non enim praesent elementum facilisis. Ipsum a arcu cursus vitae congue mauris rhoncus aenean. Pellentesque habitant morbi tristique senectus. Est placerat in egestas erat imperdiet sed euismod. Id eu nisl nunc mi ipsum. Integer eget aliquet nibh praesent tristique magna sit amet purus. Elementum eu facilisis sed odio morbi quis commodo odio. Mi quis hendrerit dolor magna.
+                </div>
+                <Link className="col-span-9 flex justify-center items-center hover:bg-light-blue pl-8" target="_blank" href="https://github.com/tachorzy/Dunya-Flight-Searcher">
+                  <p> 
+                  Created a website using Next.JS, TypeScript and Tailwind to implement a personalized flight searcher.
+                  Included a Firebase Database to search Duffel API for flights and to display them to the user on the webpage based on user preferences such as, budget, activities, and other popular traveler factors.
                   </p>
-                  <div className="flex justify-center items-center w-100 h-100 hover:text-beige col-span-1">
-                      <Image 
-                        src="/lofi-girl.gif" alt="Linkedin Logo" width={200} height={200}
-                        className="object-fill"
-                        />
-                  </div>
-                  <Link className="col-span-9 flex justify-center items-center hover:bg-light-blue pl-8" target="_blank" href="https://github.com/WahabJI/StudyUp/tree/main">
-                    <p>
-                      Utilized Typescript, Discord.js API, and MongoDB to implement a discord bot to create and keep track of events.
-                      Optimized bot to allow students to create or view, participate, add events to their calendar and book study rooms in the University of Houston Library.
-                      Helps to promote and organize group study sessions in student-run discord servers
-                    </p>
-                  </Link>
-                  <div className="flex justify-center items-center w-100 h-100 hover:bg-light-blue col-span-1">
-                      <Image 
-                        src="/logo-linkedin-light.svg" alt="Linkedin Logo" width={200} height={200}
-                        className="object-fill"
-                        />
-                  </div>
-                  <Link className="col-span-9 flex justify-center items-center hover:bg-light-blue pl-8" target="_blank" href="https://github.com/tachorzy/Dunya-Flight-Searcher">
-                    <p> 
-                    Created a website using Next.JS, TypeScript and Tailwind to implement a personalized flight searcher.
-                    Included a Firebase Database to search Duffel API for flights and to display them to the user on the webpage based on user preferences such as, budget, activities, and other popular traveler factors.
-                    </p>
-                  </Link>
-                  
-                </div>
-                </div>
-            </section>
+                </Link>
+                
+              </div>
+              </div>
+          </section>
                
 
 
