@@ -16,10 +16,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* this main tag sets the background to be my custom blue color and then applies the background image */}
-      <main className="bg-blue bg-cover bg-blend-multiply bg-[url(/Seamless-Circuit-Board-Pattern.svg)]">
+      <main className="">
         <div>
           {/* <div> tag for the writing in the middle of the screen */}
-          <section id="home"className="h-screen scroll-smooth">
+          <section id="home"className="h-screen scroll-smooth bg-gradient-to-b from-cblue to-sky-500">
             
             <div className="flex relative justify-end">
               {/* Div tag for buttons in the top right */}
@@ -113,7 +113,7 @@ export default function Home() {
 
 
           {/* A div tag to place the follow text in the <p> below the vh of the screen using tailwindcss */}
-          <section id="projects" className="backdrop-blur-sm h-screen flex items-center">
+          <section id="projects" className=" bg-gradient-to-b from-sky-500 to-indigo-500 h-screen flex items-center">
 
               <div className="flex flex-col gap-y-8 justify-center items-center">
                 <h1 className="text-8xl text-beige">

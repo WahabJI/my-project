@@ -14,7 +14,7 @@ module.exports = {
         // add 2 colors here of a beige color with hex code #FFFFE3 and a blue of #023047
 
         'beige': '#FFFFE3',
-        'blue': '#023047',
+        'cblue': '#023047',
         'light-blue': 'rgba(173,216,250, 0.65)',
       },
     }
