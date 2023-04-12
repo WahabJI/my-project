@@ -138,7 +138,9 @@ export default function Home() {
 
                   {/* transform transition-all duration-500 translate-y-10 opacity-0 hover:translate-y-0 hover:opacity-100 */}
           {/* PROJECTS SECTION */}
-          <section id="projects" className=" bg-gradient-to-b from-sky-500 to-indigo-500 h-screen flex items-center mx-auto">
+          <section id="projects" className=" bg-gradient-to-b from-sky-500 to-indigo-500 h-screen flex flex-col items-center">
+            <h1 className="text-center">Projects</h1>
+            <div className="my-auto">
               <div className="flex justify-top space-x-12 mx-auto" ref={myElementRef}>
                 <div className={`bg-white rounded-lg shadow-md p-4 w-96 min-h-96 transform transition-all duration-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} ${isVisible? 'delay-300' : ''}`}>
                   {/* Card content goes here */}
@@ -152,6 +154,7 @@ export default function Home() {
                   {/* Card content goes here */}
                   <h1 className="text-center">This Website!</h1>
                 </div>
+              </div>
               </div>
           </section>
 
