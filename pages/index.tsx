@@ -107,11 +107,25 @@ export default function Home() {
 
 
           {/* PROJECTS SECTION */}
-          <section id="projects" className=" bg-gradient-to-b from-sky-500 to-indigo-500 h-screen flex items-center">
+          <section id="projects" className=" bg-gradient-to-b from-sky-500 to-indigo-500 h-screen flex items-center mx-auto">
+              <div className="flex justify-center space-x-12 mx-auto">
+                <div className="bg-white rounded-lg shadow-md p-4 w-96 min-h-96">
+                  {/* Card content goes here */}
+                </div>
+                <div className="bg-white rounded-lg shadow-md p-4 w-96 min-h-96">
+                  {/* Card content goes here */}
+                </div>
+                <div className="bg-white rounded-lg shadow-md p-4 w-96 min-h-96 max-h-96">
+                  {/* Card content goes here */}
+                  test<br></br>
+                  test<br></br>
+                  test<br></br>
+                </div>
+              </div>
           </section>
 
           {/* EXPERIENCE SECTION */}
-          <section className="bg-gradient-to-b from-indigo-500 to-violet-300 h-screen">
+          <section className="bg-gradient-to-b from-indigo-500 to-violet-300 h-screen" hidden> // hidden attribute hides the section for now while working on the above section
           </section> 
 
 
