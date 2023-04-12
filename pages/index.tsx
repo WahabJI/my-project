@@ -5,8 +5,39 @@ import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
 import { TypeAnimation } from 'react-type-animation';
 const inter = Inter({ subsets: ['latin'] })
+import { useRef, useState, useEffect } from 'react';
+
+function isElementVisible(element: HTMLElement): boolean {
+  const rect = element.getBoundingClientRect();
+  const windowHeight =
+    window.innerHeight || document.documentElement.clientHeight;
+
+  return rect.bottom >= 0 && rect.top <= windowHeight;
+}
 
 export default function Home() {
+  const [isVisible, setIsVisible] = useState(false);
+  const myElementRef = useRef(null);
+
+  useEffect(() => {
+    function handleScroll() {
+      if (myElementRef.current && isElementVisible(myElementRef.current)) {
+        setIsVisible(true);
+        console.log("visible")
+      }
+      else{
+        setIsVisible(false);
+        console.log("not visible")
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <Head>
@@ -105,21 +136,21 @@ export default function Home() {
             </a>       
           </section>
 
-
+                  {/* transform transition-all duration-500 translate-y-10 opacity-0 hover:translate-y-0 hover:opacity-100 */}
           {/* PROJECTS SECTION */}
           <section id="projects" className=" bg-gradient-to-b from-sky-500 to-indigo-500 h-screen flex items-center mx-auto">
-              <div className="flex justify-center space-x-12 mx-auto">
-                <div className="bg-white rounded-lg shadow-md p-4 w-96 min-h-96">
+              <div className="flex justify-top space-x-12 mx-auto" ref={myElementRef}>
+                <div className={`bg-white rounded-lg shadow-md p-4 w-96 min-h-96 transform transition-all duration-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} ${isVisible? 'delay-300' : ''}`}>
                   {/* Card content goes here */}
+                  <h1 className="text-center">StudyUP</h1>
                 </div>
-                <div className="bg-white rounded-lg shadow-md p-4 w-96 min-h-96">
+                <div className={`bg-white rounded-lg shadow-md p-4 w-96 min-h-96 transform transition-all duration-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} ${isVisible? 'delay-500' : ''}`}>
                   {/* Card content goes here */}
+                  <h1 className="text-center">Fuel Quoter/Dunya</h1>
                 </div>
-                <div className="bg-white rounded-lg shadow-md p-4 w-96 min-h-96 max-h-96">
+                <div className={`bg-white rounded-lg shadow-md p-4 w-96 min-h-96 transform transition-all duration-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} ${isVisible? 'delay-700' : ''}`}>
                   {/* Card content goes here */}
-                  test<br></br>
-                  test<br></br>
-                  test<br></br>
+                  <h1 className="text-center">This Website!</h1>
                 </div>
               </div>
           </section>
