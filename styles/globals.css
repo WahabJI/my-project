@@ -8,7 +8,7 @@
 
 .arrow-container {
   position: absolute;
-  bottom: 5vh;
+  bottom: 3vh;
   left: 49.4%;
   transform: translateX(-50%);
   height: 50px;
@@ -49,3 +49,23 @@
     border-right-width: 4px;
   }
 }
+
+::-webkit-scrollbar-thumb{
+  background: #023047;
+  border-radius: 3px; 
+  
+}
+
+::-webkit-scrollbar{
+  width:12px;
+}
+
+::-webkit-scrollbar * {
+  width:12px;
+  background: transparent;
+}
+
+body{
+  overflow: overlay;
+}
+
