@@ -50,9 +50,9 @@ export default function Home() {
       <main className="">
         <div>
           {/* <div> tag for the writing in the middle of the screen */}
-          <section id="home"className="h-screen scroll-smooth bg-gradient-to-b from-cblue to-sky-500">
+          <section id="home"className="h-screen scroll-smooth bg-gradient-to-b from-cblue to-sky-500 flex flex-col items-center">
             
-            <div className="flex relative justify-end">
+            <div className="ml-auto">
               {/* Div tag for buttons in the top right */}
               <div className="grid grid-cols-4 gap-0 mr-4 text-xl font-bold">
                 <div>
@@ -75,7 +75,7 @@ export default function Home() {
             
             
             
-            <div className="flex items-center justify-center relative h-screen">
+            <div className="flex items-center justify-center h-5/6">
               <h1 className="text-6xl font-title font-bold text-beige">Hi, I'm&nbsp; 
                 <TypeAnimation
                   // Same String at the start will only be typed once, initially
@@ -99,7 +99,7 @@ export default function Home() {
               </h1>
             </div>
 
-            <div className="flex justify-center relative -mt-80">
+            <div className="justify-center relative -mt-80">
             {/* <div> tag for the icons at the bottom */}
               <div className="grid grid-cols-3 p-4 justify-items-center">
 
@@ -138,21 +138,47 @@ export default function Home() {
 
                   {/* transform transition-all duration-500 translate-y-10 opacity-0 hover:translate-y-0 hover:opacity-100 */}
           {/* PROJECTS SECTION */}
-          <section id="projects" className=" bg-gradient-to-b from-sky-500 to-indigo-500 h-screen flex flex-col items-center">
-            <h1 className="text-center">Projects</h1>
+          <section id="projects" className="bg-gradient-to-b from-sky-500 to-indigo-500 h-screen flex flex-col items-center">
+            <h1 className="text-center mt-16 text-6xl font-title font-bold text-beige">Projects</h1>
             <div className="my-auto">
-              <div className="flex justify-top space-x-12 mx-auto" ref={myElementRef}>
-                <div className={`bg-white rounded-lg shadow-md p-4 w-96 min-h-96 transform transition-all duration-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} ${isVisible? 'delay-300' : ''}`}>
+              <div className="flex space-x-12 mx-auto mb-16" ref={myElementRef}>
+                <div className={`bg-white rounded-lg shadow-md p-4 w-96 h-96 transform transition-all duration-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} ${isVisible? 'delay-300' : ''}`}>
                   {/* Card content goes here */}
-                  <h1 className="text-center">StudyUP</h1>
+                  <h1 className="text-center text-2xl bg-gradient-to-r from-cblue to-indigo-500 bg-clip-text text-transparent">StudyUP</h1>
+
+                  <div className="flex justify-center items-center mt-4">
+                    <hr className="border-gray-300 border-2 rounded-lg w-2/4" />
+                  </div>
+
+                  <p className="px-4 mt-4">
+                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  </p>
                 </div>
                 <div className={`bg-white rounded-lg shadow-md p-4 w-96 min-h-96 transform transition-all duration-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} ${isVisible? 'delay-500' : ''}`}>
                   {/* Card content goes here */}
-                  <h1 className="text-center">Fuel Quoter/Dunya</h1>
+                  <h1 className="text-center text-2xl bg-gradient-to-r from-cblue to-indigo-500 bg-clip-text text-transparent">Fuel Quoter/Dunya</h1>
+
+                  
+                  <div className="flex justify-center items-center mt-4">
+                    <hr className="border-gray-300 border-2 rounded-lg w-3/4" />
+                  </div>
+                  
+                  <p className="px-4 mt-4 text-justify">
+                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  </p>
                 </div>
                 <div className={`bg-white rounded-lg shadow-md p-4 w-96 min-h-96 transform transition-all duration-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} ${isVisible? 'delay-700' : ''}`}>
                   {/* Card content goes here */}
-                  <h1 className="text-center">This Website!</h1>
+                  <h1 className="text-center text-2xl bg-gradient-to-r from-cblue to-indigo-500 bg-clip-text text-transparent">This Website!</h1>
+
+                  
+                  <div className="flex justify-center items-center mt-4">
+                    <hr className="border-gray-300 border-2 rounded-lg w-2/4" />
+                  </div>
+                  
+                  <p className="px-4 mt-4">
+                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  </p>
                 </div>
               </div>
               </div>
