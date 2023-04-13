@@ -185,7 +185,38 @@ export default function Home() {
           </section>
 
           {/* EXPERIENCE SECTION */}
-          <section className="bg-gradient-to-b from-indigo-500 to-violet-300 h-screen" hidden> // hidden attribute hides the section for now while working on the above section
+          <section id="experience" className="bg-gradient-to-b from-indigo-500 to-violet-300 h-screen flex flex-col items-center">
+            <h1 className="text-center text-6xl font-title font-bold text-beige">Experience</h1>
+            <div className="flex flex-row justify-center my-auto">
+              <div className="w-1/4 h-auto p-2 mr-12 pt-12">
+                <div className="bg-white rounded-md p-2">
+                  <p className="text-sm font-medium">Company 1</p>
+                </div>
+                <div className="bg-white rounded-md p-2 mt-4">
+                  <p className="text-sm font-medium">Company 2</p>
+                </div>
+                <div className="bg-white rounded-md p-2 mt-4">
+                  <p className="text-sm font-medium">Company 3</p>
+                </div>
+                <div className="bg-white rounded-md p-2 mt-4">
+                  <p className="text-sm font-medium">Company 4</p>
+                </div>
+              </div>
+              <div className="h-[400px] bg-gray-400 w-[5px] ml-0.5"></div>
+              <div className="w-3/4 h-auto ml-16 pl-16 pt-4">
+                <div className="bg-white rounded-md p-4">
+                  <p className="text-lg font-bold">Job Title</p>
+                  <p className="text-sm font-medium">Company Name | Location | Start Date - End Date</p>
+                  <p className="max-w-md">
+                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                  </p>
+                </div>
+              </div>
+            </div>
           </section> 
 
 
