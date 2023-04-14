@@ -18,6 +18,7 @@ function isElementVisible(element: HTMLElement): boolean {
 }
 
 export default function Home() {
+  const [buttonClicked, setButtonClicked] = useState(1);
   const [isVisible, setIsVisible] = useState(false);
   const myElementRef = useRef(null);
 
@@ -39,7 +40,6 @@ export default function Home() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   return (
     <>
       <Head>
@@ -191,12 +191,15 @@ export default function Home() {
             <h1 className="text-center text-6xl font-title font-bold text-beige">Experience</h1>
             <div className="flex flex-row justify-center my-auto">
               <div className="w-1/4 h-auto p-2 mr-12 pt-12">
+                
                 <div className="bg-white rounded-md p-2">
-                  <p className="text-sm font-medium">Company 1</p>
+                  <button onClick={() => {setButtonClicked(4); console.log(buttonClicked);}} className="text-sm font-medium block w-full h-full">Company 1</button>
                 </div>
+
                 <div className="bg-white rounded-md p-2 mt-4">
-                  <p className="text-sm font-medium">Company 2</p>
+                  <button onClick={() => {setButtonClicked(1); console.log(buttonClicked);}} className="text-sm font-medium block w-full h-full">Company 2</button>
                 </div>
+
                 <div className="bg-white rounded-md p-2 mt-4">
                   <p className="text-sm font-medium">Company 3</p>
                 </div>
@@ -204,8 +207,8 @@ export default function Home() {
                   <p className="text-sm font-medium">Company 4</p>
                 </div>
               </div>
-              <div className="h-[400px] bg-gray-400 w-[5px] ml-0.5"></div>
-                <Job1></Job1>
+              <div className="h-[600px] bg-gray-500 w-[5px] ml-0.5 rounded-lg"></div>
+                {buttonClicked === 4 ? <Job1 isClicked={true}/> : <Job1 isClicked={false}/>}
             </div>
           </section> 
 
