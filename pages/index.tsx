@@ -190,36 +190,72 @@ export default function Home() {
           </section>
 
           {/* EXPERIENCE SECTION */}
-          <section id="experience" className="bg-gradient-to-b from-indigo-500 to-violet-300 h-screen">
-            <h1 className="text-center text-6xl font-title font-bold text-beige flex flex-col items-center">Experience</h1>
-            <div className="grid grid-cols-10 grid-rows-4">
-              <div className="col-span-4 row-span-4 flex justify-center items-center">
+          <section id="experience" className="bg-gradient-to-b from-indigo-500 to-violet-300 h-screen flex flex-col">
+            <h1 className="text-center text-6xl font-title font-bold text-beige mt-2">Experience</h1>
+            <div className="grid grid-cols-11 grid-rows-4">
+              
+              <div className="col-span-5 mt-24 h-16 flex justify-end">
+                <div className="bg-white w-96 rounded-lg shadow-md p-4">
+                  {/* Content goes here */}
+                  test
+                </div>
+              </div>
+              
+              {/* MIDDLE LINE */}
+              <div className="col-span-1 row-span-4 flex justify-center items-center">
                 <div className="mt-24 h-[800px] bg-white w-[10px] rounded-lg"></div>
               </div>
-              <div className="col-span-6 w-24 h-24 mt-24">
-              <div className="bg-white rounded-lg shadow-md p-4">
-                {/* Content goes here */}
-                test
+                  
+              <div className="col-span-5 w-24 h-24 mt-24">
+                <div className="rounded-lg shadow-md p-4">
+                  {/* Content goes here */}
+                  <p className="text-beige text-center text-2xl">TEMP TEXT</p>
+                </div>
               </div>
+
+              <div className="col-span-5 mt-24 flex justify-end">
+                <div className="w-24 h-24 rounded-lg shadow-md p-4">
+                  {/* Content goes here */}
+                  <p className="text-beige text-center text-2xl">TEMP TEXT</p>
+                </div>
               </div>
-              <div className="col-span-6 w-24 h-24 mt-24">
-              <div className="bg-white rounded-lg shadow-md p-4">
-                {/* Content goes here */}
-                test
+
+              <div className="col-span-5 mt-24 flex justify-start">
+                <div className="bg-white w-96 h-24 rounded-lg shadow-md p-4">
+                  {/* Content goes here */}
+                  test
+                </div>
               </div>
+
+              <div className="col-span-5 mt-24 flex justify-end">
+                <div className="bg-white w-96 h-24 rounded-lg shadow-md p-4">
+                  {/* Content goes here */}
+                  test
+                </div>
               </div>
-              <div className="col-span-6 w-24 h-24 mt-24">
-              <div className="bg-white rounded-lg shadow-md p-4">
-                {/* Content goes here */}
-                test
+                  
+              <div className="col-span-5 w-24 h-24 mt-24">
+                <div className="rounded-lg shadow-md p-4">
+                  {/* Content goes here */}
+                  <p className="text-beige text-center text-2xl">TEMP TEXT</p>
+                </div>
               </div>
+
+              <div className="col-span-5 mt-24 flex justify-end">
+                <div className="w-24 h-24 rounded-lg shadow-md p-4">
+                  {/* Content goes here */}
+                  <p className="text-beige text-center text-2xl">TEMP TEXT</p>
+                </div>
               </div>
-              <div className="col-span-6 w-24 h-24 mt-24">
-              <div className="bg-white rounded-lg shadow-md p-4">
-                {/* Content goes here */}
-                test
+
+              <div className="col-span-5 mt-24 flex justify-start">
+                <div className="bg-white w-96 h-24 rounded-lg shadow-md p-4">
+                  {/* Content goes here */}
+                  test
+                </div>
               </div>
-              </div>
+              
+              
             </div>
           </section>
 
