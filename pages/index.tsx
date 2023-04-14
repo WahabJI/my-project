@@ -7,6 +7,8 @@ import { TypeAnimation } from 'react-type-animation';
 const inter = Inter({ subsets: ['latin'] })
 import { useRef, useState, useEffect } from 'react';
 import Job1 from '@/components/ExperienceExample';
+import Job2 from '@/components/ExperienceExample2';
+import { render } from 'react-dom'
 
 
 function isElementVisible(element: HTMLElement): boolean {
@@ -18,7 +20,7 @@ function isElementVisible(element: HTMLElement): boolean {
 }
 
 export default function Home() {
-  const [buttonClicked, setButtonClicked] = useState(1);
+  const [buttonClicked, setButtonClicked] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const myElementRef = useRef(null);
 
@@ -40,6 +42,7 @@ export default function Home() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <>
       <Head>
@@ -187,17 +190,65 @@ export default function Home() {
           </section>
 
           {/* EXPERIENCE SECTION */}
-          <section id="experience" className="bg-gradient-to-b from-indigo-500 to-violet-300 h-screen flex flex-col items-center">
-            <h1 className="text-center text-6xl font-title font-bold text-beige">Experience</h1>
-            <div className="flex flex-row justify-center my-auto">
+          <section id="experience" className="bg-gradient-to-b from-indigo-500 to-violet-300 h-screen">
+            <h1 className="text-center text-6xl font-title font-bold text-beige flex flex-col items-center">Experience</h1>
+            <div className="grid grid-cols-10 grid-rows-4">
+              <div className="col-span-4 row-span-4 flex justify-center items-center">
+                <div className="mt-24 h-[800px] bg-white w-[10px] rounded-lg"></div>
+              </div>
+              <div className="col-span-6 w-24 h-24 mt-24">
+              <div className="bg-white rounded-lg shadow-md p-4">
+                {/* Content goes here */}
+                test
+              </div>
+              </div>
+              <div className="col-span-6 w-24 h-24 mt-24">
+              <div className="bg-white rounded-lg shadow-md p-4">
+                {/* Content goes here */}
+                test
+              </div>
+              </div>
+              <div className="col-span-6 w-24 h-24 mt-24">
+              <div className="bg-white rounded-lg shadow-md p-4">
+                {/* Content goes here */}
+                test
+              </div>
+              </div>
+              <div className="col-span-6 w-24 h-24 mt-24">
+              <div className="bg-white rounded-lg shadow-md p-4">
+                {/* Content goes here */}
+                test
+              </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+          
+        </div>
+      </main>
+    </>
+  )
+}
+
+
+{/* <div className="flex flex-row justify-center my-auto">
               <div className="w-1/4 h-auto p-2 mr-12 pt-12">
                 
                 <div className="bg-white rounded-md p-2">
-                  <button onClick={() => {setButtonClicked(4); console.log(buttonClicked);}} className="text-sm font-medium block w-full h-full">Company 1</button>
+                  <button onClick={() => {
+                    setButtonClicked(1); 
+                    console.log(buttonClicked);
+                    }} className="text-sm font-medium block w-full h-full">Company 1</button>
                 </div>
 
                 <div className="bg-white rounded-md p-2 mt-4">
-                  <button onClick={() => {setButtonClicked(1); console.log(buttonClicked);}} className="text-sm font-medium block w-full h-full">Company 2</button>
+                  <button onClick={() => {
+                    setButtonClicked(2); 
+                    console.log(buttonClicked);
+                    }} className="text-sm font-medium block w-full h-full">Company 2</button>
                 </div>
 
                 <div className="bg-white rounded-md p-2 mt-4">
@@ -208,15 +259,6 @@ export default function Home() {
                 </div>
               </div>
               <div className="h-[600px] bg-gray-500 w-[5px] ml-0.5 rounded-lg"></div>
-                {buttonClicked === 4 ? <Job1 isClicked={true}/> : <Job1 isClicked={false}/>}
-            </div>
-          </section> 
-
-
-
-          
-        </div>
-      </main>
-    </>
-  )
-}
+                {buttonClicked === 1 ? <Job1 isClicked={true}/> : <Job1 isClicked={false}/>}
+                {buttonClicked === 2 ? <Job2 isClicked={true}/> : <Job2 isClicked={false}/>}
+            </div> */}
