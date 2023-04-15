@@ -183,7 +183,7 @@ export default function Home() {
                     <hr className="border-gray-300 border-2 rounded-lg w-2/4" />
                   </div>
                   
-                  <p className="px-4 mt-4">
+                  <p className="px-4 mt-4 text-lg">
                     lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                   </p>
                 </div>
@@ -197,27 +197,35 @@ export default function Home() {
             <div className="grid grid-cols-11 grid-rows-4">
               
               <div className="col-span-5 mt-24 flex justify-end">
-                <div className="bg-white w-96 h-44 rounded-lg shadow-md p-4">
+                <div className="bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6">
                   {/* Content goes here */}
-                  test
+                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">Company Name</h1>
+                  <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
+                  <ul className="text-lg">
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                  </ul>
                 </div>
               </div>
               
               {/* MIDDLE LINE */}
               <div className="col-span-1 row-span-4 flex justify-center">
                 <div className="flex justify-center items-center absolute">
-                  <div className="mt-16 h-[800px] bg-white w-[10px] rounded-lg"></div>
+                  <div className="mt-16 h-[1000px] bg-white w-[10px] rounded-lg"></div>
                 </div>
-                <div className="bg-white rounded-full w-12 h-12 mt-[120px] absolute"></div>
+                <div className="bg-white rounded-full w-12 h-12 mt-[115px] absolute"></div>
                 <div className="bg-white rounded-full w-12 h-12 mt-[310px] absolute"></div>
                 <div className="bg-white rounded-full w-12 h-12 mt-[500px] absolute"></div>
                 <div className="bg-white rounded-full w-12 h-12 mt-[700px] absolute"></div>
               </div>
                   
-              <div className="col-span-5 w-24 h-24 mt-24">
-                <div className="rounded-lg shadow-md p-4">
+              <div className="col-span-5 mt-24 flex justify-start">
+                <div className="rounded-lg p-4">
                   {/* Content goes here */}
-                  <p className="text-beige text-center text-2xl">TEMP TEXT</p>
+                  <p className="text-beige text-center text-2xl mt-2 -ml-16">Month Year - Month Year</p>
                 </div>
               </div>
 
