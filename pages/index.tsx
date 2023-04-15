@@ -193,8 +193,8 @@ export default function Home() {
 
           {/* EXPERIENCE SECTION */}
           <section id="experience" className="bg-gradient-to-b from-indigo-500 to-violet-300 min-h-screen flex flex-col">
-            <h1 className="text-center text-6xl font-title font-bold text-beige mt-2">Experience</h1>
-            <div className="grid grid-cols-11 grid-rows-4">
+            <h1 className="text-center text-6xl font-title font-bold text-beige mt-16">Experience</h1>
+            <div className="grid grid-cols-11 grid-rows-4 pb-32">
               
               <div className="col-span-5 mt-24 flex justify-end">
                 <div className="bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6">
@@ -214,60 +214,84 @@ export default function Home() {
               {/* MIDDLE LINE */}
               <div className="col-span-1 row-span-4 flex justify-center">
                 <div className="flex justify-center items-center absolute">
-                  <div className="mt-16 h-[1000px] bg-white w-[10px] rounded-lg"></div>
+                  <div className="mt-16 h-[1400px] bg-white w-[10px] rounded-lg"></div>
                 </div>
                 <div className="bg-white rounded-full w-12 h-12 mt-[115px] absolute"></div>
-                <div className="bg-white rounded-full w-12 h-12 mt-[310px] absolute"></div>
-                <div className="bg-white rounded-full w-12 h-12 mt-[500px] absolute"></div>
-                <div className="bg-white rounded-full w-12 h-12 mt-[700px] absolute"></div>
+                <div className="bg-white rounded-full w-12 h-12 mt-[465px] absolute"></div>
+                <div className="bg-white rounded-full w-12 h-12 mt-[810px] absolute"></div>
+                <div className="bg-white rounded-full w-12 h-12 mt-[1158px] absolute"></div>
               </div>
                   
               <div className="col-span-5 mt-24 flex justify-start">
                 <div className="rounded-lg p-4">
                   {/* Content goes here */}
-                  <p className="text-beige text-center text-2xl mt-2 -ml-16">Month Year - Month Year</p>
+                  <p className="text-beige text-center text-2xl mt-2 -ml-6">Month Year - Month Year</p>
                 </div>
               </div>
 
               <div className="col-span-5 mt-24 flex justify-end">
-                <div className="w-24 h-24 rounded-lg shadow-md p-4">
-                  
-                  <p className="text-beige text-center text-2xl">TEMP TEXT</p>
+                <div className="rounded-lg p-4">
+                  {/* Content goes here */}
+                  <p className="text-beige text-center text-2xl mt-2 -ml-6">Month Year - Month Year</p>
                 </div>
               </div>
 
               <div className="col-span-5 mt-24 flex justify-start">
-                <div className="bg-white w-96 h-24 rounded-lg shadow-md p-4">
-                  
-                  test
+                <div className="bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6">
+                  {/* Content goes here */}
+                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">Company Name</h1>
+                  <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
+                  <ul className="text-lg">
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                  </ul>
                 </div>
               </div>
 
               <div className="col-span-5 mt-24 flex justify-end">
-                <div className="bg-white w-96 h-24 rounded-lg shadow-md p-4">
-                  
-                  test
+                <div className="bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6">
+                  {/* Content goes here */}
+                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">Company Name</h1>
+                  <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
+                  <ul className="text-lg">
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                  </ul>
                 </div>
               </div>
                   
-              <div className="col-span-5 w-24 h-24 mt-24">
-                <div className="rounded-lg shadow-md p-4">
-                  
-                  <p className="text-beige text-center text-2xl">TEMP TEXT</p>
+              <div className="col-span-5 mt-24 flex justify-start">
+                <div className="rounded-lg p-4">
+                  {/* Content goes here */}
+                  <p className="text-beige text-center text-2xl mt-2 -ml-6">Month Year - Month Year</p>
                 </div>
               </div>
 
               <div className="col-span-5 mt-24 flex justify-end">
-                <div className="w-24 h-24 rounded-lg shadow-md p-4">
-                  
-                  <p className="text-beige text-center text-2xl">TEMP TEXT</p>
+                <div className="rounded-lg p-4">
+                  {/* Content goes here */}
+                  <p className="text-beige text-center text-2xl mt-2 -ml-6">Month Year - Month Year</p>
                 </div>
               </div>
 
               <div className="col-span-5 mt-24 flex justify-start">
-                <div className="bg-white w-96 h-24 rounded-lg shadow-md p-4">
-                  
-                  test
+                <div className="bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6">
+                  {/* Content goes here */}
+                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">Company Name</h1>
+                  <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
+                  <ul className="text-lg">
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                  </ul>
                 </div>
               </div>
               
