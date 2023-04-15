@@ -57,26 +57,28 @@ export default function Home() {
           {/* <div> tag for the writing in the middle of the screen */}
           <section id="home"className="h-screen scroll-smooth bg-gradient-to-b from-cblue to-sky-500 flex flex-col items-center">
             
-            <div className="ml-auto">
+            <nav className="ml-auto">
               {/* Div tag for buttons in the top right */}
-              <div className="grid grid-cols-4 gap-0 mr-4 text-xl font-bold">
-                <div>
-                  <a href="#home"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Home</a>
-                </div>
-                
-                <div>
-                  <a href="#"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">About Me</a>
-                </div>
+              <div className="">
+                <ul className="grid grid-cols-4 gap-0 mr-4 text-xl font-bold">
+                  <li>
+                    <a href="#home"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Home</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#projects"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Projects</a>
+                  </li>
 
-                <div>
-                  <a href="#projects"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Projects</a>
-                </div>
+                  <li>
+                    <a href="#experience"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Experience</a>
+                  </li>
 
-                <div>
-                  <a href="#"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Contact Me</a>
-                </div>
+                  <li>
+                    <a href="#"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Contact Me</a>
+                  </li>
+                </ul>
               </div>
-            </div>
+            </nav>
             
             
             
