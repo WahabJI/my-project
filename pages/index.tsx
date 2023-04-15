@@ -190,7 +190,7 @@ export default function Home() {
           </section>
 
           {/* EXPERIENCE SECTION */}
-          <section id="experience" className="bg-gradient-to-b from-indigo-500 to-violet-300 h-screen flex flex-col">
+          <section id="experience" className="bg-gradient-to-b from-indigo-500 to-violet-300 min-h-screen flex flex-col">
             <h1 className="text-center text-6xl font-title font-bold text-beige mt-2">Experience</h1>
             <div className="grid grid-cols-11 grid-rows-4">
               
