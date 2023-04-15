@@ -194,16 +194,22 @@ export default function Home() {
             <h1 className="text-center text-6xl font-title font-bold text-beige mt-2">Experience</h1>
             <div className="grid grid-cols-11 grid-rows-4">
               
-              <div className="col-span-5 mt-24 h-16 flex justify-end">
-                <div className="bg-white w-96 rounded-lg shadow-md p-4">
+              <div className="col-span-5 mt-24 flex justify-end">
+                <div className="bg-white w-96 h-44 rounded-lg shadow-md p-4">
                   {/* Content goes here */}
                   test
                 </div>
               </div>
               
               {/* MIDDLE LINE */}
-              <div className="col-span-1 row-span-4 flex justify-center items-center">
-                <div className="mt-24 h-[800px] bg-white w-[10px] rounded-lg"></div>
+              <div className="col-span-1 row-span-4 flex justify-center">
+                <div className="flex justify-center items-center absolute">
+                  <div className="mt-16 h-[800px] bg-white w-[10px] rounded-lg"></div>
+                </div>
+                <div className="bg-white rounded-full w-12 h-12 mt-[120px] absolute"></div>
+                <div className="bg-white rounded-full w-12 h-12 mt-[310px] absolute"></div>
+                <div className="bg-white rounded-full w-12 h-12 mt-[500px] absolute"></div>
+                <div className="bg-white rounded-full w-12 h-12 mt-[700px] absolute"></div>
               </div>
                   
               <div className="col-span-5 w-24 h-24 mt-24">
@@ -215,42 +221,42 @@ export default function Home() {
 
               <div className="col-span-5 mt-24 flex justify-end">
                 <div className="w-24 h-24 rounded-lg shadow-md p-4">
-                  {/* Content goes here */}
+                  
                   <p className="text-beige text-center text-2xl">TEMP TEXT</p>
                 </div>
               </div>
 
               <div className="col-span-5 mt-24 flex justify-start">
                 <div className="bg-white w-96 h-24 rounded-lg shadow-md p-4">
-                  {/* Content goes here */}
+                  
                   test
                 </div>
               </div>
 
               <div className="col-span-5 mt-24 flex justify-end">
                 <div className="bg-white w-96 h-24 rounded-lg shadow-md p-4">
-                  {/* Content goes here */}
+                  
                   test
                 </div>
               </div>
                   
               <div className="col-span-5 w-24 h-24 mt-24">
                 <div className="rounded-lg shadow-md p-4">
-                  {/* Content goes here */}
+                  
                   <p className="text-beige text-center text-2xl">TEMP TEXT</p>
                 </div>
               </div>
 
               <div className="col-span-5 mt-24 flex justify-end">
                 <div className="w-24 h-24 rounded-lg shadow-md p-4">
-                  {/* Content goes here */}
+                  
                   <p className="text-beige text-center text-2xl">TEMP TEXT</p>
                 </div>
               </div>
 
               <div className="col-span-5 mt-24 flex justify-start">
                 <div className="bg-white w-96 h-24 rounded-lg shadow-md p-4">
-                  {/* Content goes here */}
+                  
                   test
                 </div>
               </div>
