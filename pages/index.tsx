@@ -228,7 +228,7 @@ export default function Home() {
                   <div className="mt-16 h-[1400px] bg-white w-[10px] rounded-lg"></div>
                 </div>
                 <div className={`bg-white rounded-full mt-[115px] absolute transition-all duration-500 ${isVisible2? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${isVisible2? 'delay-100' : ''}` }></div>
-                <div className="bg-white rounded-full w-12 h-12 mt-[465px] absolute"></div>
+                <div className="bg-white rounded-full w-12 h-12 mt-[465px] absolute justify-center flex items-center"><div className="bg-green-500 rounded-full w-6 h-6"><div className="bg-green-500 rounded-full w-6 h-6 animate-ping"></div></div></div>
                 <div className="bg-white rounded-full w-12 h-12 mt-[810px] absolute"></div>
                 <div className="bg-white rounded-full w-12 h-12 mt-[1158px] absolute"></div>
               </div>
