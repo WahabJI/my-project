@@ -23,16 +23,26 @@ export default function Home() {
   const [buttonClicked, setButtonClicked] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const myElementRef = useRef(null);
+  const myElementRef2 = useRef(null);
 
   useEffect(() => {
     function handleScroll() {
       if (myElementRef.current && isElementVisible(myElementRef.current)) {
         setIsVisible(true);
-        console.log("visible")
+        console.log("projects visible")
       }
       else{
         setIsVisible(false);
-        console.log("not visible")
+        console.log("projects not visible")
+      }
+
+      if (myElementRef2.current && isElementVisible(myElementRef2.current)) {
+        setIsVisible(true);
+        console.log("experience visible")
+      }
+      else{
+        setIsVisible(false);
+        console.log("experience not visible")
       }
     }
 
@@ -196,7 +206,7 @@ export default function Home() {
             <h1 className="text-center text-6xl font-title font-bold text-beige mt-16">Experience</h1>
             <div className="grid grid-cols-11 grid-rows-4 pb-32">
               
-              <div className="col-span-5 mt-24 flex justify-end">
+              <div className="col-span-5 mt-24 flex justify-end" ref={myElementRef2}>
                 <div className="bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6">
                   {/* Content goes here */}
                   <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">Company Name</h1>
