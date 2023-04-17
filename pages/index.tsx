@@ -23,8 +23,10 @@ export default function Home() {
   const [buttonClicked, setButtonClicked] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const [isVisible2, setIsVisible2] = useState(false);
+  const [isVisible3, setIsVisible3] = useState(false);
   const myElementRef = useRef(null);
   const myElementRef2 = useRef(null);
+  const myElementRef3 = useRef(null);
 
   useEffect(() => {
     function handleScroll() {
@@ -39,12 +41,21 @@ export default function Home() {
 
       if (myElementRef2.current && isElementVisible(myElementRef2.current)) {
         setIsVisible2(true);
-        console.log("experience visible")
+        console.log("experience first half visible")
       }
-      else{
-        setIsVisible2(false);
-        console.log("experience not visible")
+      // else{
+      //   setIsVisible2(false);
+      //   console.log("experience first half not visible")
+      // }
+
+      if (myElementRef3.current && isElementVisible(myElementRef3.current)) {
+        setIsVisible3(true);
+        console.log("experience second half visible")
       }
+      // else{
+      //   setIsVisible3(false);
+      //   console.log("experience second half not visible")
+      // }
     }
 
     window.addEventListener("scroll", handleScroll);
@@ -202,7 +213,7 @@ export default function Home() {
               </div>
           </section>
 
-          {/* EXPERIENCE SECTION */}
+          {/* EXPERIENCE SECTION --------------------------------------------------------------------------------------------------------------------------*/}
           <section id="experience" className="bg-gradient-to-b from-indigo-500 to-violet-300 min-h-screen flex flex-col">
             <h1 className="text-center text-6xl font-title font-bold text-beige mt-16">Experience</h1>
             <div className="grid grid-cols-11 grid-rows-4 pb-32">
@@ -222,33 +233,33 @@ export default function Home() {
                 </div>
               </div>
               
+              {/* <div className="bg-green-500 rounded-full w-6 h-6"><div className="bg-green-500 rounded-full w-6 h-6 animate-ping"></div></div> */}
               {/* MIDDLE LINE */}
               <div className="col-span-1 row-span-4 flex justify-center">
                 <div className="flex justify-center items-center absolute">
                   <div className="mt-16 h-[1400px] bg-white w-[10px] rounded-lg"></div>
                 </div>
                 <div className={`bg-white rounded-full mt-[115px] absolute transition-all duration-500 ${isVisible2? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${isVisible2? 'delay-100' : ''}` }></div>
-                <div className="bg-white rounded-full w-12 h-12 mt-[465px] absolute justify-center flex items-center"><div className="bg-green-500 rounded-full w-6 h-6"><div className="bg-green-500 rounded-full w-6 h-6 animate-ping"></div></div></div>
-                <div className="bg-white rounded-full w-12 h-12 mt-[810px] absolute"></div>
-                <div className="bg-white rounded-full w-12 h-12 mt-[1158px] absolute"></div>
+                <div className={`bg-white rounded-full mt-[465px] absolute transition-all duration-500 ${isVisible2? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${isVisible2? 'delay-300' : ''}` }></div>
+                <div className={`bg-white rounded-full mt-[810px] absolute transition-all duration-500 ${isVisible3? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${isVisible2? 'delay-100' : ''}` }></div>
+                <div className={`bg-white rounded-full mt-[1158px] absolute transition-all duration-500 ${isVisible3? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${isVisible2? 'delay-300' : ''}` }></div>
               </div>
                   
-              <div className={`col-span-5 mt-24 flex justify-start ${!isVisible2 ? 'translate-x-10 opacity-0' : 'translate-x-0 opacity-100'} ${isVisible2? 'delay-500' : ''} `}>
-                <div className="rounded-lg p-4 shadow-lg">
-                  {/* Content goes here */}
-                  <p className="text-beige text-center text-2xl mt-2 -ml-6">Month Year - Month Year</p>
-                </div>
+              <div className="col-span-5 mt-24 flex justify-start">
+                <p className={`text-beige text-center text-2xl mt-7 ${!isVisible2 ? 'translate-x-10 opacity-0' : 'translate-x-0 opacity-100'} transition-transform duration-500`}>
+                  Month Year - Month Year
+                </p>
               </div>
 
+
               <div className="col-span-5 mt-24 flex justify-end">
-                <div className="rounded-lg p-4">
-                  {/* Content goes here */}
-                  <p className="text-beige text-center text-2xl mt-2 -ml-6">Month Year - Month Year</p>
-                </div>
+                <p className={`text-beige text-center text-2xl mt-7 ${!isVisible2 ? '-translate-x-10 opacity-0' : 'translate-x-0 opacity-100'} transition-transform duration-500 ${isVisible2? 'delay-300' : ''}`}>
+                  Month Year - Month Year
+                </p>
               </div>
 
               <div className="col-span-5 mt-24 flex justify-start">
-                <div className="bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6">
+                <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!isVisible2 ? ' translate-x-10 opacity-0' : 'translate-x-0 opacity-100'} ${isVisible2? 'delay-300' : ''} `}>
                   {/* Content goes here */}
                   <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">Company Name</h1>
                   <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
@@ -262,8 +273,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="col-span-5 mt-24 flex justify-end">
-                <div className="bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6">
+              <div className="col-span-5 mt-24 flex justify-end" ref={myElementRef3}>
+                <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!isVisible3 ? '-translate-x-10 opacity-0' : 'translate-x-0 opacity-100'} ${isVisible3? 'delay-100' : ''} `}>
                   {/* Content goes here */}
                   <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">Company Name</h1>
                   <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
@@ -278,16 +289,15 @@ export default function Home() {
               </div>
                   
               <div className="col-span-5 mt-24 flex justify-start">
-                <div className="rounded-lg p-4">
-                  {/* Content goes here */}
-                  <p className="text-beige text-center text-2xl mt-2 -ml-6">Month Year - Month Year</p>
-                </div>
+                <p className={`text-beige text-center text-2xl mt-7 ${!isVisible3 ? 'translate-x-10 opacity-0' : 'translate-x-0 opacity-100'} transition-transform duration-500 ${isVisible3? 'delay-100' : ''}`}>
+                  Month Year - Month Year
+                </p>
               </div>
 
               <div className="col-span-5 mt-24 flex justify-end">
                 <div className="rounded-lg p-4">
                   {/* Content goes here */}
-                  <p className="text-beige text-center text-2xl mt-2 -ml-6">Month Year - Month Year</p>
+                  <p className="text-beige text-center text-2xl mt-4 -ml-6">Month Year - Month Year</p>
                 </div>
               </div>
 
