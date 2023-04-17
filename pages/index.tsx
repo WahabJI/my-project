@@ -22,6 +22,7 @@ function isElementVisible(element: HTMLElement): boolean {
 export default function Home() {
   const [buttonClicked, setButtonClicked] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
+  const [isVisible2, setIsVisible2] = useState(false);
   const myElementRef = useRef(null);
   const myElementRef2 = useRef(null);
 
@@ -37,11 +38,11 @@ export default function Home() {
       }
 
       if (myElementRef2.current && isElementVisible(myElementRef2.current)) {
-        setIsVisible(true);
+        setIsVisible2(true);
         console.log("experience visible")
       }
       else{
-        setIsVisible(false);
+        setIsVisible2(false);
         console.log("experience not visible")
       }
     }
@@ -207,7 +208,7 @@ export default function Home() {
             <div className="grid grid-cols-11 grid-rows-4 pb-32">
               
               <div className="col-span-5 mt-24 flex justify-end" ref={myElementRef2}>
-                <div className="bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6">
+                <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!isVisible2 ? '-translate-x-10 opacity-0' : 'translate-x-0 opacity-100'} ${isVisible2? 'delay-100' : ''} `}>
                   {/* Content goes here */}
                   <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">Company Name</h1>
                   <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
@@ -226,14 +227,14 @@ export default function Home() {
                 <div className="flex justify-center items-center absolute">
                   <div className="mt-16 h-[1400px] bg-white w-[10px] rounded-lg"></div>
                 </div>
-                <div className="bg-white rounded-full w-12 h-12 mt-[115px] absolute"></div>
+                <div className={`bg-white rounded-full mt-[115px] absolute transition-all duration-500 ${isVisible2? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${isVisible2? 'delay-100' : ''}` }></div>
                 <div className="bg-white rounded-full w-12 h-12 mt-[465px] absolute"></div>
                 <div className="bg-white rounded-full w-12 h-12 mt-[810px] absolute"></div>
                 <div className="bg-white rounded-full w-12 h-12 mt-[1158px] absolute"></div>
               </div>
                   
-              <div className="col-span-5 mt-24 flex justify-start">
-                <div className="rounded-lg p-4">
+              <div className={`col-span-5 mt-24 flex justify-start ${!isVisible2 ? 'translate-x-10 opacity-0' : 'translate-x-0 opacity-100'} ${isVisible2? 'delay-500' : ''} `}>
+                <div className="rounded-lg p-4 shadow-lg">
                   {/* Content goes here */}
                   <p className="text-beige text-center text-2xl mt-2 -ml-6">Month Year - Month Year</p>
                 </div>
