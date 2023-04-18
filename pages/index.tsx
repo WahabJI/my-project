@@ -219,7 +219,7 @@ export default function Home() {
             <div className="grid grid-cols-11 grid-rows-4 pb-32">
               
               <div className="col-span-5 mt-24 flex justify-end" ref={myElementRef2}>
-                <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!isVisible2 ? '-translate-x-10 opacity-0' : 'translate-x-0 opacity-100'} ${isVisible2? 'delay-100' : ''} `}>
+                <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!isVisible2 ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100'} ${isVisible2? 'delay-100' : ''} `}>
                   {/* Content goes here */}
                   <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">Company Name</h1>
                   <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
@@ -239,27 +239,27 @@ export default function Home() {
                 <div className="flex justify-center items-center absolute">
                   <div className="mt-16 h-[1400px] bg-white w-[10px] rounded-lg"></div>
                 </div>
-                <div className={`bg-white rounded-full mt-[115px] absolute transition-all duration-500 ${isVisible2? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${isVisible2? 'delay-100' : ''}` }></div>
+                <div className={`bg-white rounded-full mt-[115px] absolute transition-all duration-500 ${isVisible2? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${isVisible2? 'delay-100' : ''} flex justify-center items-center` }><div className="bg-green-500 rounded-full w-8 h-8 animate-ping transform transition duration-500"></div></div>
                 <div className={`bg-white rounded-full mt-[465px] absolute transition-all duration-500 ${isVisible2? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${isVisible2? 'delay-300' : ''}` }></div>
-                <div className={`bg-white rounded-full mt-[810px] absolute transition-all duration-500 ${isVisible3? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${isVisible2? 'delay-100' : ''}` }></div>
-                <div className={`bg-white rounded-full mt-[1158px] absolute transition-all duration-500 ${isVisible3? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${isVisible2? 'delay-300' : ''}` }></div>
+                <div className={`bg-white rounded-full mt-[810px] absolute transition-all duration-500 ${isVisible3? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${isVisible3? 'delay-3  300' : ''}` }></div>
+                <div className={`bg-white rounded-full mt-[1158px] absolute transition-all duration-500 ${isVisible3? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${isVisible3? 'delay-500' : ''}` }></div>
               </div>
                   
               <div className="col-span-5 mt-24 flex justify-start">
-                <p className={`text-beige text-center text-2xl mt-7 ${!isVisible2 ? 'translate-x-10 opacity-0' : 'translate-x-0 opacity-100'} transition-transform duration-500`}>
+                <p className={`text-beige text-center text-2xl mt-7 ${!isVisible2 ? 'translate-x-full opacity-0' : 'translate-x-0 opacity-100'} transition-transform duration-500 ${isVisible2? 'delay-100' : ''}`}>
                   Month Year - Month Year
                 </p>
               </div>
 
 
               <div className="col-span-5 mt-24 flex justify-end">
-                <p className={`text-beige text-center text-2xl mt-7 ${!isVisible2 ? '-translate-x-10 opacity-0' : 'translate-x-0 opacity-100'} transition-transform duration-500 ${isVisible2? 'delay-300' : ''}`}>
+                <p className={`text-beige text-center text-2xl mt-7 ${!isVisible2 ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100'} transition-transform duration-500 ${isVisible2? 'delay-300' : ''}`}>
                   Month Year - Month Year
                 </p>
               </div>
 
               <div className="col-span-5 mt-24 flex justify-start">
-                <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!isVisible2 ? ' translate-x-10 opacity-0' : 'translate-x-0 opacity-100'} ${isVisible2? 'delay-300' : ''} `}>
+                <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!isVisible2 ? ' translate-x-full opacity-0' : 'translate-x-0 opacity-100'} ${isVisible2? 'delay-300' : ''} `}>
                   {/* Content goes here */}
                   <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">Company Name</h1>
                   <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
@@ -272,11 +272,11 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
-
-              <div className="col-span-5 mt-24 flex justify-end" ref={myElementRef3}>
-                <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!isVisible3 ? '-translate-x-10 opacity-0' : 'translate-x-0 opacity-100'} ${isVisible3? 'delay-100' : ''} `}>
+              {/* ---------------------------------------------------------------------------------------------------- */}
+              <div className="col-span-5 mt-24 flex justify-end">
+                <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!isVisible3 ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100'} ${isVisible3? 'delay-300' : ''} `}>
                   {/* Content goes here */}
-                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">Company Name</h1>
+                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent" ref={myElementRef3}>Company Name</h1>
                   <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
                   <ul className="text-lg">
                     <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
@@ -289,22 +289,21 @@ export default function Home() {
               </div>
                   
               <div className="col-span-5 mt-24 flex justify-start">
-                <p className={`text-beige text-center text-2xl mt-7 ${!isVisible3 ? 'translate-x-10 opacity-0' : 'translate-x-0 opacity-100'} transition-transform duration-500 ${isVisible3? 'delay-100' : ''}`}>
+                <p className={`text-beige text-center text-2xl mt-7 ${!isVisible3 ? 'translate-x-full opacity-0' : 'translate-x-0 opacity-100'} transition-transform duration-500 ${isVisible3? 'delay-300' : ''}`}>
                   Month Year - Month Year
                 </p>
               </div>
 
               <div className="col-span-5 mt-24 flex justify-end">
-                <div className="rounded-lg p-4">
-                  {/* Content goes here */}
-                  <p className="text-beige text-center text-2xl mt-4 -ml-6">Month Year - Month Year</p>
-                </div>
+                <p className={`text-beige text-center text-2xl mt-7 ${!isVisible3 ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100'} transition-transform duration-500 ${isVisible3? 'delay-500' : ''}`}>
+                  Month Year - Month Year
+                </p>
               </div>
 
               <div className="col-span-5 mt-24 flex justify-start">
-                <div className="bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6">
+                <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!isVisible3 ? 'translate-x-full opacity-0' : 'translate-x-0 opacity-100'} ${isVisible3? 'delay-500' : ''} `}>
                   {/* Content goes here */}
-                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">Company Name</h1>
+                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent" ref={myElementRef3}>Company Name</h1>
                   <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
                   <ul className="text-lg">
                     <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
