@@ -1,11 +1,9 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import { useRef, useState, useEffect } from 'react';
-import { TypeAnimation } from 'react-type-animation';
-import {ExperienceSection} from '../components/sections/ExperienceSection';
+import {ProjectSection} from '../components/sections/ProjectSection';
 import {HomeSection} from '../components/sections/HomeSection';
+import {ExperienceSection} from '../components/sections/ExperienceSection';
 function isElementVisible(element: HTMLElement): boolean {
   const rect = element.getBoundingClientRect();
   const windowHeight =
@@ -67,121 +65,21 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* this main tag sets the background to be my custom blue color and then applies the background image */}
       <main className="">
-          {/* <div> tag for the writing in the middle of the screen */}
+        {/* HOME SECTION */}
+        <HomeSection/>
+        
+        {/* PROJECTS SECTION */}
+        <ProjectSection isVisible={isVisible} myElementRef={myElementRef} />
+
+        {/* EXPERIENCE SECTION */}
+        <ExperienceSection isVisible2={isVisible2} isVisible3={isVisible3} myElementRef2={myElementRef2} myElementRef3={myElementRef3} />
           
-          <HomeSection/>
-          {/* transform transition-all duration-500 translate-y-10 opacity-0 hover:translate-y-0 hover:opacity-100 */}
-          {/* PROJECTS SECTION */}
-          <ExperienceSection isVisible={isVisible} myElementRef={myElementRef} />
-
-          {/* EXPERIENCE SECTION --------------------------------------------------------------------------------------------------------------------------*/}
-          <section id="experience" className="bg-gradient-to-b from-indigo-500 to-violet-300 min-h-screen flex flex-col overflow-x-hidden">
-            <h1 className="text-center text-6xl font-title font-bold text-beige mt-16">Experience</h1>
-            <div className="grid grid-cols-11 grid-rows-4 pb-32">
-              
-              <div className="col-span-5 mt-24 flex justify-end" ref={myElementRef2}>
-                <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!isVisible2 ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100'} ${isVisible2? 'delay-100' : ''} `}>
-                  {/* Content goes here */}
-                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">Company Name</h1>
-                  <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
-                  <ul className="text-lg">
-                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                  </ul>
-                </div>
-              </div>
-              
-              {/* <div className="bg-green-500 rounded-full w-6 h-6"><div className="bg-green-500 rounded-full w-6 h-6 animate-ping"></div></div> */}
-              {/* MIDDLE LINE */}
-              <div className="col-span-1 row-span-4 flex justify-center">
-                <div className="flex justify-center items-center absolute">
-                  <div className="mt-16 h-[1400px] bg-white w-[10px] rounded-lg"></div>
-                </div>
-                <div className={`bg-white rounded-full mt-[115px] absolute transition-all duration-500 ${isVisible2? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${isVisible2? 'delay-100' : ''} flex justify-center items-center` }><div className="bg-green-500 rounded-full w-8 h-8 animate-ping transform transition duration-500"></div></div>
-                <div className={`bg-white rounded-full mt-[465px] absolute transition-all duration-500 ${isVisible2? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${isVisible2? 'delay-300' : ''}` }></div>
-                <div className={`bg-white rounded-full mt-[810px] absolute transition-all duration-500 ${isVisible3? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${isVisible3? 'delay-3  300' : ''}` }></div>
-                <div className={`bg-white rounded-full mt-[1158px] absolute transition-all duration-500 ${isVisible3? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${isVisible3? 'delay-500' : ''}` }></div>
-              </div>
-                  
-              <div className="col-span-5 mt-24 flex justify-start">
-                <p className={`text-beige text-center text-2xl mt-7 ${!isVisible2 ? 'translate-x-full opacity-0' : 'translate-x-0 opacity-100'} transition-transform duration-500 ${isVisible2? 'delay-100' : ''}`}>
-                  Month Year - Month Year
-                </p>
-              </div>
-
-
-              <div className="col-span-5 mt-24 flex justify-end">
-                <p className={`text-beige text-center text-2xl mt-7 ${!isVisible2 ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100'} transition-transform duration-500 ${isVisible2? 'delay-300' : ''}`}>
-                  Month Year - Month Year
-                </p>
-              </div>
-
-              <div className="col-span-5 mt-24 flex justify-start">
-                <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!isVisible2 ? ' translate-x-full opacity-0' : 'translate-x-0 opacity-100'} ${isVisible2? 'delay-300' : ''} `}>
-                  {/* Content goes here */}
-                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">Company Name</h1>
-                  <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
-                  <ul className="text-lg">
-                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                  </ul>
-                </div>
-              </div>
-              {/* ---------------------------------------------------------------------------------------------------- */}
-              <div className="col-span-5 mt-24 flex justify-end">
-                <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!isVisible3 ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100'} ${isVisible3? 'delay-300' : ''} `}>
-                  {/* Content goes here */}
-                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent" ref={myElementRef3}>Company Name</h1>
-                  <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
-                  <ul className="text-lg">
-                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                  </ul>
-                </div>
-              </div>
-                  
-              <div className="col-span-5 mt-24 flex justify-start">
-                <p className={`text-beige text-center text-2xl mt-7 ${!isVisible3 ? 'translate-x-full opacity-0' : 'translate-x-0 opacity-100'} transition-transform duration-500 ${isVisible3? 'delay-300' : ''}`}>
-                  Month Year - Month Year
-                </p>
-              </div>
-
-              <div className="col-span-5 mt-24 flex justify-end">
-                <p className={`text-beige text-center text-2xl mt-7 ${!isVisible3 ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100'} transition-transform duration-500 ${isVisible3? 'delay-500' : ''}`}>
-                  Month Year - Month Year
-                </p>
-              </div>
-
-              <div className="col-span-5 mt-24 flex justify-start">
-                <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!isVisible3 ? 'translate-x-full opacity-0' : 'translate-x-0 opacity-100'} ${isVisible3? 'delay-500' : ''} `}>
-                  {/* Content goes here */}
-                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent" ref={myElementRef3}>Company Name</h1>
-                  <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
-                  <ul className="text-lg">
-                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                  </ul>
-                </div>
-              </div>
-              
-              
-            </div>
-          </section>
       </main>
     </>
   )
 }
+
+
+// COOL CSS STUFF
+{/* transform transition-all duration-500 translate-y-10 opacity-0 hover:translate-y-0 hover:opacity-100 */}

@@ -1,67 +1,117 @@
-import React from 'react';
+import React from "react";
 
 interface ExperienceSectionProps {
-    myElementRef: React.MutableRefObject<null>;
-    isVisible: boolean;
+    myElementRef2: React.MutableRefObject<null>;
+    myElementRef3: React.MutableRefObject<null>;
+    isVisible2: boolean;
+    isVisible3: boolean;
 }
 
 export const ExperienceSection = (props: ExperienceSectionProps) => {
-    return (
-        <section id="projects" className="bg-gradient-to-b from-sky-500 to-indigo-500 h-screen flex flex-col items-center">
-            <h1 className="text-center mt-16 text-6xl font-title font-bold text-beige">Projects</h1>
-            <div className="my-auto">
-              <div className="flex space-x-12 mx-auto mb-16" ref={props.myElementRef}>
-                <div className={`bg-white rounded-lg shadow-md p-4 w-96 h-96 transform transition-all duration-500 ${props.isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} ${props.isVisible? 'delay-300' : ''}`}>
-                  {/* Card content goes here */}
-                  <h1 className="text-center text-2xl bg-gradient-to-r from-cblue to-indigo-500 bg-clip-text text-transparent">StudyUP</h1>
-
-                  <div className="flex justify-center items-center mt-4">
-                    <hr className="border-gray-300 border-2 rounded-lg w-2/4" />
-                  </div>
-
-                  <p className="px-4 mt-4 text-justify text-lg">
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  </p>
-                </div>
-
-
-                <div className={`bg-white rounded-lg shadow-md p-4 w-96 min-h-96 transform transition-all duration-500 ${props.isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} ${props.isVisible? 'delay-500' : ''}`}>
-                  {/* Card content goes here */}
-                  <h1 className="text-center text-2xl bg-gradient-to-r from-cblue to-indigo-500 bg-clip-text text-transparent">Fuel Quoter/Dunya</h1>
-
-                  
-                  <div className="flex justify-center items-center mt-4">
-                    <hr className="border-gray-300 border-2 rounded-lg w-3/4" />
-                  </div>
-                  
-                  <p className="px-4 mt-4 text-justify text-lg">
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  </p>
-                  {/* TEST LOGOS */}
-                  {/* <div className="justify-end flex pt-6">
-                    <Image className="mr-4" alt="test" src="/mongodb-ar21.svg" width={100} height={30}/>
-                    <Image className="mr-4" alt="test" src="/Nextjs-logo.svg" width={100} height={30}/>
-                    <Image alt="test" src="/Tailwind_CSS_Logo.svg" width={30} height={30}/>
-                  </div> */}
-                </div>
-
-
-                <div className={`bg-white rounded-lg shadow-md p-4 w-96 min-h-96 transform transition-all duration-500 ${props.isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} ${props.isVisible? 'delay-700' : ''}`}>
-                  {/* Card content goes here */}
-                  <h1 className="text-center text-2xl bg-gradient-to-r from-cblue to-indigo-500 bg-clip-text text-transparent">This Website!</h1>
-
-                  
-                  <div className="flex justify-center items-center mt-4">
-                    <hr className="border-gray-300 border-2 rounded-lg w-2/4" />
-                  </div>
-                  
-                  <p className="px-4 mt-4 text-justify text-lg">
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  </p>
+    return(
+        <section id="experience" className="bg-gradient-to-b from-indigo-500 to-violet-300 min-h-screen flex flex-col overflow-x-hidden">
+            <h1 className="text-center text-6xl font-title font-bold text-beige mt-16">Experience</h1>
+            <div className="grid grid-cols-11 grid-rows-4 pb-32">
+              
+              <div className="col-span-5 mt-24 flex justify-end" ref={props.myElementRef2}>
+                <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!props.isVisible2 ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100'} ${props.isVisible2? 'delay-100' : ''} `}>
+                  {/* Content goes here */}
+                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">Company Name</h1>
+                  <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
+                  <ul className="text-lg">
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                  </ul>
                 </div>
               </div>
+              
+              {/* <div className="bg-green-500 rounded-full w-6 h-6"><div className="bg-green-500 rounded-full w-6 h-6 animate-ping"></div></div> */}
+              {/* MIDDLE LINE */}
+              <div className="col-span-1 row-span-4 flex justify-center">
+                <div className="flex justify-center items-center absolute">
+                  <div className="mt-16 h-[1400px] bg-white w-[10px] rounded-lg"></div>
+                </div>
+                <div className={`bg-white rounded-full mt-[115px] absolute transition-all duration-500 ${props.isVisible2? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${props.isVisible2? 'delay-100' : ''} flex justify-center items-center` }><div className="bg-green-500 rounded-full w-8 h-8 animate-ping transform transition duration-500"></div></div>
+                <div className={`bg-white rounded-full mt-[465px] absolute transition-all duration-500 ${props.isVisible2? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${props.isVisible2? 'delay-300' : ''}` }></div>
+                <div className={`bg-white rounded-full mt-[810px] absolute transition-all duration-500 ${props.isVisible3? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${props.isVisible3? 'delay-3  300' : ''}` }></div>
+                <div className={`bg-white rounded-full mt-[1158px] absolute transition-all duration-500 ${props.isVisible3? 'h-16 w-16 opacity-1' : 'h-4 w-4 opacity-0.5'} ${props.isVisible3? 'delay-500' : ''}` }></div>
               </div>
+                  
+              <div className="col-span-5 mt-24 flex justify-start">
+                <p className={`text-beige text-center text-2xl mt-7 ${!props.isVisible2 ? 'translate-x-full opacity-0' : 'translate-x-0 opacity-100'} transition-transform duration-500 ${props.isVisible2? 'delay-100' : ''}`}>
+                  Month Year - Month Year
+                </p>
+              </div>
+
+
+              <div className="col-span-5 mt-24 flex justify-end">
+                <p className={`text-beige text-center text-2xl mt-7 ${!props.isVisible2 ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100'} transition-transform duration-500 ${props.isVisible2? 'delay-300' : ''}`}>
+                  Month Year - Month Year
+                </p>
+              </div>
+
+              <div className="col-span-5 mt-24 flex justify-start">
+                <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!props.isVisible2 ? ' translate-x-full opacity-0' : 'translate-x-0 opacity-100'} ${props.isVisible2? 'delay-300' : ''} `}>
+                  {/* Content goes here */}
+                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">Company Name</h1>
+                  <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
+                  <ul className="text-lg">
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                  </ul>
+                </div>
+              </div>
+              {/* ---------------------------------------------------------------------------------------------------- */}
+              <div className="col-span-5 mt-24 flex justify-end">
+                <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!props.isVisible3 ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100'} ${props.isVisible3? 'delay-300' : ''} `}>
+                  {/* Content goes here */}
+                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent" ref={props.myElementRef3}>Company Name</h1>
+                  <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
+                  <ul className="text-lg">
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                  </ul>
+                </div>
+              </div>
+                  
+              <div className="col-span-5 mt-24 flex justify-start">
+                <p className={`text-beige text-center text-2xl mt-7 ${!props.isVisible3 ? 'translate-x-full opacity-0' : 'translate-x-0 opacity-100'} transition-transform duration-500 ${props.isVisible3? 'delay-300' : ''}`}>
+                  Month Year - Month Year
+                </p>
+              </div>
+
+              <div className="col-span-5 mt-24 flex justify-end">
+                <p className={`text-beige text-center text-2xl mt-7 ${!props.isVisible3 ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100'} transition-transform duration-500 ${props.isVisible3? 'delay-500' : ''}`}>
+                  Month Year - Month Year
+                </p>
+              </div>
+
+              <div className="col-span-5 mt-24 flex justify-start">
+                <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!props.isVisible3 ? 'translate-x-full opacity-0' : 'translate-x-0 opacity-100'} ${props.isVisible3? 'delay-500' : ''} `}>
+                  {/* Content goes here */}
+                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent" ref={props.myElementRef3}>Company Name</h1>
+                  <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
+                  <ul className="text-lg">
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                  </ul>
+                </div>
+              </div>
+              
+              
+            </div>
           </section>
     );
-    };
-
+}
