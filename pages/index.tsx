@@ -1,16 +1,11 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
-import { TypeAnimation } from 'react-type-animation';
-const inter = Inter({ subsets: ['latin'] })
+import Image from 'next/image'
+import styles from '@/styles/Home.module.css'
 import { useRef, useState, useEffect } from 'react';
-import Job1 from '@/components/ExperienceExample';
-import Job2 from '@/components/ExperienceExample2';
-import { render } from 'react-dom'
+import { TypeAnimation } from 'react-type-animation';
 import {ExperienceSection} from '../components/sections/ExperienceSection';
-
+import {NavBar} from '../components/NavBar';
 function isElementVisible(element: HTMLElement): boolean {
   const rect = element.getBoundingClientRect();
   const windowHeight =
@@ -20,7 +15,6 @@ function isElementVisible(element: HTMLElement): boolean {
 }
 
 export default function Home() {
-  const [buttonClicked, setButtonClicked] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const [isVisible2, setIsVisible2] = useState(false);
   const [isVisible3, setIsVisible3] = useState(false);
@@ -75,35 +69,9 @@ export default function Home() {
       </Head>
       {/* this main tag sets the background to be my custom blue color and then applies the background image */}
       <main className="">
-        <div>
           {/* <div> tag for the writing in the middle of the screen */}
           <section id="home"className="h-screen scroll-smooth bg-gradient-to-b from-cblue to-sky-500 flex flex-col items-center">
-            
-            <nav className="ml-auto">
-              {/* Div tag for buttons in the top right */}
-              <div className="">
-                <ul className="grid grid-cols-4 gap-0 mr-4 text-xl font-bold">
-                  <li>
-                    <a href="#home"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Home</a>
-                  </li>
-                  
-                  <li>
-                    <a href="#projects"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Projects</a>
-                  </li>
-
-                  <li>
-                    <a href="#experience"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Experience</a>
-                  </li>
-
-                  <li>
-                    <a href="#"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Contact Me</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-            
-            
-            
+            <NavBar />
             <div className="flex items-center justify-center h-5/6">
               <h1 className="text-6xl font-title font-bold text-beige">Hi, I'm&nbsp; 
                 <TypeAnimation
@@ -274,43 +242,7 @@ export default function Home() {
               
             </div>
           </section>
-
-
-
-
-          
-        </div>
       </main>
     </>
   )
 }
-
-
-{/* <div className="flex flex-row justify-center my-auto">
-              <div className="w-1/4 h-auto p-2 mr-12 pt-12">
-                
-                <div className="bg-white rounded-md p-2">
-                  <button onClick={() => {
-                    setButtonClicked(1); 
-                    console.log(buttonClicked);
-                    }} className="text-sm font-medium block w-full h-full">Company 1</button>
-                </div>
-
-                <div className="bg-white rounded-md p-2 mt-4">
-                  <button onClick={() => {
-                    setButtonClicked(2); 
-                    console.log(buttonClicked);
-                    }} className="text-sm font-medium block w-full h-full">Company 2</button>
-                </div>
-
-                <div className="bg-white rounded-md p-2 mt-4">
-                  <p className="text-sm font-medium">Company 3</p>
-                </div>
-                <div className="bg-white rounded-md p-2 mt-4">
-                  <p className="text-sm font-medium">Company 4</p>
-                </div>
-              </div>
-              <div className="h-[600px] bg-gray-500 w-[5px] ml-0.5 rounded-lg"></div>
-                {buttonClicked === 1 ? <Job1 isClicked={true}/> : <Job1 isClicked={false}/>}
-                {buttonClicked === 2 ? <Job2 isClicked={true}/> : <Job2 isClicked={false}/>}
-            </div> */}
