@@ -6,10 +6,10 @@ import Image from 'next/image'
 import { NavBar } from '../NavBar';
 export const HomeSection = () => {
     return(
-        <section id="home"className="h-screen scroll-smooth bg-gradient-to-b from-cblue to-sky-500 flex flex-col items-center">
+        <section id="home"className="h-screen scroll-smooth bg-gradient-to-b from-cblue to-sky-500">
             <NavBar />
-            <div className="flex items-center justify-center h-5/6">
-              <h1 className="text-6xl font-title font-bold text-beige">Hi, I'm&nbsp; 
+            <div className="flex justify-center items-end h-3/6">
+              <h1 className="text-4xl lg:text-6xl font-title font-bold text-beige">Hi, I'm&nbsp; 
                 <TypeAnimation
                   // Same String at the start will only be typed once, initially
                   sequence={[
@@ -32,12 +32,12 @@ export const HomeSection = () => {
               </h1>
             </div>
 
-            <div className="justify-center relative -mt-80">
+            <div className="flex justify-center items-center h-2/6">
             {/* <div> tag for the icons at the bottom */}
-              <div className="grid grid-cols-3 p-4 justify-items-center">
+              <div className="grid grid-cols-3 p-4">
 
                 <Link target="_blank" href="https://www.github.com/WahabJI">
-                  <div className="flex justify-center items-center w-40 h-40 hover:bg-light-blue">
+                  <div className="flex justify-center items-center w-20 h-20 lg:w-40 w-20 h-20 lg:h-40 hover:bg-light-blue">
                     <Image 
                       src="/logo-github-light.svg" alt="Github Logo" width={40} height={40}
                       />
@@ -45,7 +45,7 @@ export const HomeSection = () => {
                 </Link>
 
                 <Link target="_blank" href="https://www.linkedin.com/in/wahab-javed/">
-                  <div className="flex justify-center items-center w-40 h-40 hover:bg-light-blue">
+                  <div className="flex justify-center items-center  w-20 h-20 lg:w-40 w-20 h-20 lg:h-40 hover:bg-light-blue">
                     <Image 
                       src="/logo-linkedin-light.svg" alt="Linkedin Logo" width={40} height={40}
                       />
@@ -53,7 +53,7 @@ export const HomeSection = () => {
                 </Link>
 
                 <Link target="_blank" href="/RESUME_WJ_01-20-2023.pdf">
-                  <div className="flex justify-center items-center w-40 h-40 hover:bg-light-blue">
+                  <div className="flex justify-center items-center  w-20 h-20 lg:w-40 w-20 h-20 lg:h-40 hover:bg-light-blue">
                     <Image 
                       src="/newspaper-outline-light.svg" alt="Resume Logo" width={40} height={40}
                       />
@@ -62,11 +62,11 @@ export const HomeSection = () => {
               </div>
             </div>
 
-            <a href="#projects">
-            <div className="arrow-container">
-                <div id="arow" className="arrow"></div>
-            </div>
-            </a>       
+            <a href="#projects" className="arrow-container">
+              <div className="arrow"></div>
+              <div className="arrow"></div>
+              <div className="arrow"></div>  
+            </a>      
           </section> 
     );
 };
