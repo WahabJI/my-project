@@ -4,12 +4,12 @@ interface componentProps {
     isClicked: boolean;
 }
 
-function company2(props: componentProps){
-    const [isHidden, setIsHidden] = useState(!props.isClicked);
+function company2(){
+    // const [isHidden, setIsHidden] = useState(!props.isClicked);
 
     return(
     <div className={`w-3/4 h-auto ml-16 pl-16 pt-4 `} >
-        <div className={`bg-white rounded-md p-4 transform transition-all duration-500 ${props.isClicked? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-100'}`}>
+        <div className={`bg-white rounded-md p-4 transform transition-all duration-500`}>
             <p className="text-lg font-bold">Job Title 2</p>
             <p className="text-sm font-medium">Company Name 2 | Location 2 | Start Date 2 - End Date 2</p>
             <p className="max-w-md">
