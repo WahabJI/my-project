@@ -5,6 +5,10 @@ export const Hamburger = () => {
         const ham = document.getElementById("hammm");
         ham!.classList.toggle("w-[100%]");
     }
+    const Close = (e: any) => {
+        const ham = document.getElementById("hammm");
+        ham!.classList.toggle("w-[100%]");
+    }
     return(
         <>
         <div className="fixed top-0 right-2 cursor-pointer">
@@ -25,26 +29,26 @@ export const Hamburger = () => {
                 </svg>
             </button>
         </div>
-        <nav id="hammm" className="fixed w-0 h-screen bg-cblue flex justify-center items-center overflow-hidden z-50">
-            <ul className="grid grid-cols-4 gap-0 mr-4 text-xl font-bold">
+        <nav id="hammm" className="fixed w-0 h-screen bg-cblue flex justify-center items-center overflow-hidden z-50 origin-left duration-500">
+            <ul className="grid grid-rows-4 gap-0 mr-4 text-xl font-bold">
                 <li>
-                    <a href="#home"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Home</a>
+                    <a onClick={Close} href="#home"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Home</a>
                 </li>
                 
                 <li>
-                    <a href="#projects"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Projects</a>
+                    <a onClick={Close} href="#projects"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Projects</a>
                 </li>
 
                 <li>
-                    <a href="#experience"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Experience</a>
+                    <a onClick={Close} href="#experience"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Experience</a>
                 </li>
 
                 <li>
-                    <a href="#"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Contact Me</a>
+                    <a onClick={Close} href="#"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Contact Me</a>
                 </li>
             </ul>
             <div className=" absolute top-2 right-2 cursor-pointer">
-                <button type="button" className="bg-transparent p-2 rounded-md text-gray-800 hover:text-gray-900">
+                <button onClick={Close} type="button" className="bg-transparent p-2 rounded-md text-gray-800 hover:text-gray-900">
                     <svg
                         className="inline-block w-14 h-14 text-gray-500 transition-colors duration-200"
                         fill="none"
