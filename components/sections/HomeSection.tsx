@@ -4,10 +4,14 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import { NavBar } from '../NavBar';
+import { Hamburger } from '../Hamburger';
+
+
 export const HomeSection = () => {
     return(
         <section id="home"className="h-screen scroll-smooth bg-gradient-to-b from-cblue to-sky-500">
-            <NavBar />
+            {/* <NavBar /> */}
+            <Hamburger />
             <div className="flex justify-center items-end h-3/6">
               <h1 className="text-4xl lg:text-6xl font-title font-bold text-beige">Hi, I'm&nbsp; 
                 <TypeAnimation
