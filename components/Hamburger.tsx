@@ -11,7 +11,7 @@ export const Hamburger = () => {
     }
     return(
         <>
-        <div className="fixed top-0 right-2 cursor-pointer">
+        <div className="absolute top-0 right-2 cursor-pointer">
             <button onClick={Open} type="button" className="bg-transparent p-2 rounded-md text-gray-800 hover:text-gray-900">
                     <svg
                 className="inline-block w-14 h-14 text-gray-500 transition-colors duration-200"
