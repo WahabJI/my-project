@@ -32,6 +32,7 @@ export const HomeSection = () => {
                   deletionSpeed={40}
                   wrapper="span" // Animation will be rendered as a <span>
                   repeat={Infinity} // Repeat this Animation Sequence infinitely
+                  cursor={true} // Hide the Cursor
                 />
               </h1>
             </div>

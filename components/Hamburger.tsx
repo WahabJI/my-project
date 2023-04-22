@@ -25,7 +25,7 @@ export const Hamburger = () => {
                 </svg>
             </button>
         </div>
-        <nav id="hammm" className="fixed w-0 h-screen bg-cblue flex justify-center items-center overflow-hidden">
+        <nav id="hammm" className="fixed w-0 h-screen bg-cblue flex justify-center items-center overflow-hidden z-50">
             <ul className="grid grid-cols-4 gap-0 mr-4 text-xl font-bold">
                 <li>
                     <a href="#home"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Home</a>
@@ -43,6 +43,25 @@ export const Hamburger = () => {
                     <a href="#"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Contact Me</a>
                 </li>
             </ul>
+            <div className=" absolute top-2 right-2 cursor-pointer">
+                <button type="button" className="bg-transparent p-2 rounded-md text-gray-800 hover:text-gray-900">
+                    <svg
+                        className="inline-block w-14 h-14 text-gray-500 transition-colors duration-200"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M6 18L18 6M6 6l12 12"
+                        />
+                    </svg>
+                </button>
+            </div>
+
         </nav>
     </>
     );
