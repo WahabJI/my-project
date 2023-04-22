@@ -14,10 +14,10 @@ export const ExperienceSection = (props: ExperienceSectionProps) => {
             <div className="grid grid-cols-11 grid-rows-4 pb-32">
               
               <div className="col-span-5 mt-24 flex justify-end" ref={props.myElementRef2}>
-              <span className="h-3 w-3">
-                <span className="animate-ping bg-sky-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
-              </span>
+                <span className="h-3 w-3">
+                  <span className="animate-ping bg-sky-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+                </span>
                 <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!props.isVisible2 ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100'} ${props.isVisible2? 'delay-100' : ''} `}>
                   {/* Content goes here */}
                   <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">Company Name</h1>
