@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import Head from 'next/head'
 import Link from 'next/link'
@@ -8,10 +8,23 @@ import { Hamburger } from '../Hamburger';
 
 
 export const HomeSection = () => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      setIsSmallScreen(window.innerWidth < 900); // Set breakpoint for small screens
+    }
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Set initial screen size
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
     return(
         <section id="home"className="h-screen scroll-smooth bg-gradient-to-b from-cblue to-sky-500">
             {/* <NavBar /> */}
-            <Hamburger />
+            {/* <Hamburger /> */}
+            {isSmallScreen ? <Hamburger /> : <NavBar />}
             <div className="flex justify-center items-end h-3/6">
               <h1 className="text-4xl lg:text-6xl font-title font-bold text-beige">Hi, I'm&nbsp; 
                 <TypeAnimation

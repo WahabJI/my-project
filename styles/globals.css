@@ -111,7 +111,7 @@ body {
   top: 85%;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 900px) {
   .arrow-container {
     width: 100px;
     height: 75px;
