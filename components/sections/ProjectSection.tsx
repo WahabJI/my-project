@@ -10,7 +10,7 @@ export const ProjectSection = (props: ExperienceSectionProps) => {
     <section id="projects" className="bg-gradient-to-b from-sky-500 to-indigo-500 min-h-screen md:h-screen">
       {/* div container for the title at the top */}
       <div className="flex justify-center items-center h-1/6">
-        <h1 className="text-6xl text-beige font-title font-bold">Projects</h1>
+        <h1 className="text-4xl md:text-6xl text-beige font-title font-bold">Projects</h1>
       </div>
 
       <div className="flex items-center my-auto h-5/6">
