@@ -4,6 +4,7 @@ import { useRef, useState, useEffect } from 'react';
 import {ProjectSection} from '../components/sections/ProjectSection';
 import {HomeSection} from '../components/sections/HomeSection';
 import {ExperienceSection} from '../components/sections/ExperienceSection';
+import {ContactSection} from '../components/sections/ContactSection';
 function isElementVisible(element: HTMLElement): boolean {
   const rect = element.getBoundingClientRect();
   const windowHeight =
@@ -75,6 +76,7 @@ export default function Home() {
         {/* EXPERIENCE SECTION */}
         <ExperienceSection isVisible2={isVisible2} isVisible3={isVisible3} myElementRef2={myElementRef2} myElementRef3={myElementRef3} />
           
+        <ContactSection />
       </main>
     </>
   )

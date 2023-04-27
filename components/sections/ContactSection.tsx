@@ -2,6 +2,8 @@ import React from 'react'
 
 export const ContactSection = () => {
   return (
-    <div>ContactSection</div>
+    <section id="contact" className="bg-sky-500 h-screen flex">
+
+    </section>
   );
 }
