@@ -12,9 +12,9 @@ export const Hamburger = () => {
     return(
         <>
         <div className="absolute top-0 right-2 cursor-pointer">
-            <button onClick={Open} type="button" className="bg-transparent p-2 rounded-md text-gray-800 hover:text-gray-900">
+            <button onClick={Open} type="button" className="bg-transparent p-2 rounded-md text-beige hover:text-gray-900">
                     <svg
-                className="inline-block w-14 h-14 text-gray-500 transition-colors duration-200"
+                className="inline-block w-14 h-14 text-beige/90 transition-colors duration-200"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -48,9 +48,9 @@ export const Hamburger = () => {
                 </li>
             </ul>
             <div className=" absolute top-2 right-2 cursor-pointer">
-                <button onClick={Close} type="button" className="bg-transparent p-2 rounded-md text-gray-800 hover:text-gray-900">
+                <button onClick={Close} type="button" className="bg-transparent p-2 rounded-md text-beige/90 hover:text-gray-900">
                     <svg
-                        className="inline-block w-14 h-14 text-gray-500 transition-colors duration-200"
+                        className="inline-block w-14 h-14 text-beige/90 transition-colors duration-200"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"

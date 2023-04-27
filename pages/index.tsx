@@ -64,7 +64,7 @@ export default function Home() {
         <meta name="Personal Portfolio Website" content="Made by Wahab" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+      </Head> 
       <main className="">
         {/* HOME SECTION */}
         <HomeSection/>
@@ -73,7 +73,7 @@ export default function Home() {
         <ProjectSection isVisible={isVisible} myElementRef={myElementRef} />
 
         {/* EXPERIENCE SECTION */}
-        {/* <ExperienceSection isVisible2={isVisible2} isVisible3={isVisible3} myElementRef2={myElementRef2} myElementRef3={myElementRef3} /> */}
+        <ExperienceSection isVisible2={isVisible2} isVisible3={isVisible3} myElementRef2={myElementRef2} myElementRef3={myElementRef3} />
           
       </main>
     </>
