@@ -28,7 +28,7 @@ export const HomeSection = () => {
 
       {/* DIV container for the typing animation in the middle of the screen */}
       <div className="flex justify-center items-end h-3/6">
-        <h1 className="text-4xl lg:text-6xl text-beige font-title font-bold">Hi, I'm&nbsp; 
+        <h1 className="text-4xl lg:text-6xl text-beige font-bold">Hi, I'm&nbsp; 
           <TypeAnimation
             sequence={[
             'Wahab',

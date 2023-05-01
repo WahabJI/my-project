@@ -18,7 +18,7 @@ export const NavBar = () => {
                 </li>
 
                 <li>
-                    <a href="#"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Contact Me</a>
+                    <a href="#contact"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Contact Me</a>
                 </li>
             </ul>
         </div>
