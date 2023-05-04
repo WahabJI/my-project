@@ -5,17 +5,26 @@ export const ContactSection = () => {
     <section id="contact" className="h-screen">
       <div className="flex justify-center items-center bg-gradient-to-b from-purple-500 to-teal-300 h-2/6">
         <h1 className="text-4xl md:text-6xl text-beige font-title font-bold">Contact Me!</h1>
-      </div>
+      </div>  
 
       <div className="bg-white flex justify-center items-center h-4/6 shadow-lg">
-        <form>
-          <div className="flex w-full">
-          <input id="name" className="bg-gray-200 w-1/2"></input>
-          <input id="email" className="bg-gray-200 w-1/2 ml-2"></input>
+        <form className="w-5/6">
+          <div className="flex">
+            <div className="w-full">
+              <label htmlFor="name" className="flex">Name</label>
+              <input id="name" className="bg-gray-200 rounded-sm w-full h-10 shadow-inner placeholder:pl-2 placeholder:text-sm" placeholder="John Doe"></input>
+            </div>
+            <div className="ml-4 w-full">
+              <label htmlFor="email" className="flex">Email</label>
+              <input id="email" className="bg-gray-200 rounded-sm w-full h-10 shadow-inner placeholder:pl-2 placeholder:text-sm" placeholder="test@example.com"></input>
+            </div>
           </div>
-          <div className="w-full">
-            <textarea id="message" className="bg-gray-200 mt-4 w-full"></textarea>
+          <div className="w-full mt-2">
+            <label htmlFor="message" className="flex">Message</label>
+            <textarea id="message" className="bg-gray-200 w-full rounded-sm h-24 shadow-inner resize-none placeholder:pl-2 placeholder:pt-2 placeholder:text-sm" placeholder="Enter your message here"></textarea>
           </div>
+
+          <button className="w-full bg-gradient-to-r from-purple-500 to-teal-300 text-white rounded-sm p-2 mt-4 shadow-lg">Submit!</button>
         </form>
 
         {/* <div className="flex flex-col justify-center items-center bg-white w-5/6 md:w-fit h-fit rounded-lg p-6">
