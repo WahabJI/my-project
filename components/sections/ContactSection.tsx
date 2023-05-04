@@ -20,7 +20,7 @@ export const ContactSection = () => {
             </div>
           </div>
           <div className="w-full mt-2">
-            <label htmlFor="message" className="flex mb-2made">Message</label>
+            <label htmlFor="message" className="flex mb-2">Message</label>
             <textarea id="message" className="bg-gray-200 w-full rounded-sm h-24 md:h-60 shadow-inner resize-none placeholder:pl-2 placeholder:pt-2 placeholder:text-sm" placeholder="Enter your message here"></textarea>
           </div>
 
