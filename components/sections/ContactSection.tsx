@@ -8,20 +8,20 @@ export const ContactSection = () => {
       </div>  
 
       <div className="bg-white flex justify-center items-center h-4/6 shadow-lg">
-        <form className="w-5/6">
+        <form className="w-5/6 md:w-2/6">
           <div className="flex">
             <div className="w-full">
-              <label htmlFor="name" className="flex">Name</label>
+              <label htmlFor="name" className="flex mb-2">Name</label>
               <input id="name" className="bg-gray-200 rounded-sm w-full h-10 shadow-inner placeholder:pl-2 placeholder:text-sm" placeholder="John Doe"></input>
             </div>
             <div className="ml-4 w-full">
-              <label htmlFor="email" className="flex">Email</label>
+              <label htmlFor="email" className="flex mb-2">Email</label>
               <input id="email" className="bg-gray-200 rounded-sm w-full h-10 shadow-inner placeholder:pl-2 placeholder:text-sm" placeholder="test@example.com"></input>
             </div>
           </div>
           <div className="w-full mt-2">
-            <label htmlFor="message" className="flex">Message</label>
-            <textarea id="message" className="bg-gray-200 w-full rounded-sm h-24 shadow-inner resize-none placeholder:pl-2 placeholder:pt-2 placeholder:text-sm" placeholder="Enter your message here"></textarea>
+            <label htmlFor="message" className="flex mb-2made">Message</label>
+            <textarea id="message" className="bg-gray-200 w-full rounded-sm h-24 md:h-60 shadow-inner resize-none placeholder:pl-2 placeholder:pt-2 placeholder:text-sm" placeholder="Enter your message here"></textarea>
           </div>
 
           <button className="w-full bg-gradient-to-r from-purple-500 to-teal-300 text-white rounded-sm p-2 mt-4 shadow-lg hover:opacity-90">Submit!</button>
