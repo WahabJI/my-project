@@ -24,7 +24,7 @@ export const ContactSection = () => {
             <textarea id="message" className="bg-gray-200 w-full rounded-sm h-24 shadow-inner resize-none placeholder:pl-2 placeholder:pt-2 placeholder:text-sm" placeholder="Enter your message here"></textarea>
           </div>
 
-          <button className="w-full bg-gradient-to-r from-purple-500 to-teal-300 text-white rounded-sm p-2 mt-4 shadow-lg">Submit!</button>
+          <button className="w-full bg-gradient-to-r from-purple-500 to-teal-300 text-white rounded-sm p-2 mt-4 shadow-lg hover:opacity-90">Submit!</button>
         </form>
 
         {/* <div className="flex flex-col justify-center items-center bg-white w-5/6 md:w-fit h-fit rounded-lg p-6">
