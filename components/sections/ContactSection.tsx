@@ -9,7 +9,7 @@ export const ContactSection = () => {
 
       <div className="bg-white flex justify-center items-center h-4/6 shadow-lg">
         <form className="w-5/6 md:w-2/6">
-          <div className="flex">
+          <div className="flex hidden md:block">
             <div className="w-full">
               <label htmlFor="name" className="flex mb-2">Name</label>
               <input id="name" className="bg-gray-200 rounded-sm w-full h-10 shadow-inner placeholder:pl-2 placeholder:text-sm" placeholder="John Doe"></input>
