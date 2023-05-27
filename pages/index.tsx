@@ -95,7 +95,7 @@ export default function Home() {
         
         
           
-        {/* <ContactSection /> */}
+        <ContactSection />
       </main>
     </>
   )

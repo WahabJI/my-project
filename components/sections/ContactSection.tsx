@@ -8,17 +8,15 @@ export const ContactSection = () => {
       </div>  
 
       <div className="bg-white flex justify-center items-center h-4/6 shadow-lg">
-        <form className="w-5/6 md:w-2/6">
-          <div className="flex hidden md:block">
+        <form className="w-5/6">
             <div className="w-full">
               <label htmlFor="name" className="flex mb-2">Name</label>
               <input id="name" className="bg-gray-200 rounded-sm w-full h-10 shadow-inner placeholder:pl-2 placeholder:text-sm" placeholder="John Doe"></input>
             </div>
-            <div className="ml-4 w-full">
+            <div className="w-full">
               <label htmlFor="email" className="flex mb-2">Email</label>
               <input id="email" className="bg-gray-200 rounded-sm w-full h-10 shadow-inner placeholder:pl-2 placeholder:text-sm" placeholder="test@example.com"></input>
             </div>
-          </div>
           <div className="w-full mt-2">
             <label htmlFor="message" className="flex mb-2">Message</label>
             <textarea id="message" className="bg-gray-200 w-full rounded-sm h-24 md:h-60 shadow-inner resize-none placeholder:pl-2 placeholder:pt-2 placeholder:text-sm" placeholder="Enter your message here"></textarea>
