@@ -15,6 +15,7 @@ function isElementVisible(element: HTMLElement): boolean {
 }
 
 export default function Home() {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const [isVisible2, setIsVisible2] = useState(false);
   const [isVisible3, setIsVisible3] = useState(false);
@@ -59,6 +60,17 @@ export default function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    function handleResize() {
+      setIsSmallScreen(window.innerWidth < 1024); // Set breakpoint for small screens
+    }
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Set initial screen size
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <>
       <Head>
@@ -72,11 +84,16 @@ export default function Home() {
         {/* <HomeSection/> */}
         
         {/* PROJECTS SECTION */}
-        <ProjectSection isVisible={isVisible} myElementRef={myElementRef} />
+        {/* <ProjectSection isVisible={isVisible} myElementRef={myElementRef} /> */}
 
         {/* EXPERIENCE SECTION */}
-        {/* <ExperienceSection isVisible2={isVisible2} isVisible3={isVisible3} myElementRef2={myElementRef2} myElementRef3={myElementRef3} /> */}
-        {/* <ExperienceSectionResponsive isVisible2={isVisible2} isVisible3={isVisible3} myElementRef2={myElementRef2} myElementRef3={myElementRef3} /> */}
+        {isSmallScreen?
+          <ExperienceSectionResponsive isVisible2={isVisible2} isVisible3={isVisible3} myElementRef2={myElementRef2} myElementRef3={myElementRef3} /> : 
+          <ExperienceSection isVisible2={isVisible2} isVisible3={isVisible3} myElementRef2={myElementRef2} myElementRef3={myElementRef3} /> 
+          
+          }
+        
+        
           
         {/* <ContactSection /> */}
       </main>

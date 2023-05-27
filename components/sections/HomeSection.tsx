@@ -12,7 +12,7 @@ export const HomeSection = () => {
 
   useEffect(() => {
     function handleResize() {
-      setIsSmallScreen(window.innerWidth < 900); // Set breakpoint for small screens
+      setIsSmallScreen(window.innerWidth < 768); // Set breakpoint for small screens
     }
 
     window.addEventListener('resize', handleResize);

@@ -9,7 +9,7 @@ interface ExperienceSectionProps {
 
 export const ExperienceSectionResponsive = (props: ExperienceSectionProps) => {
     return(
-        <section id="experience" className="bg-gradient-to-b from-indigo-500 to-purple-500">
+        <section id="experience" className="bg-gradient-to-b from-indigo-500 to-purple-500 min-h-screen">
             <div className="flex justify-center items-center pt-4">
                 <h1 className="text-center text-4xl font-bold text-beige">Experience</h1>
             </div>
