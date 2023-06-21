@@ -17,8 +17,8 @@ export const ExperienceSection = (props: ExperienceSectionProps) => {
                 <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!props.isVisible2 ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100'} ${props.isVisible2? 'delay-100' : ''} `}>
                   {/* Content goes here */}
                   
-                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">Company Name</h1>
-                  <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
+                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">Plug Power</h1>
+                  <h2 className="text-gray-700 text-xl">Software Engineering Intern</h2>
                   <ul className="text-lg">
                     <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
                     <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
@@ -60,8 +60,8 @@ export const ExperienceSection = (props: ExperienceSectionProps) => {
               <div className="col-span-5 mt-24 flex justify-start">
                 <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!props.isVisible2 ? ' translate-x-full opacity-0' : 'translate-x-0 opacity-100'} ${props.isVisible2? 'delay-300' : ''} `}>
                   {/* Content goes here */}
-                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">Company Name</h1>
-                  <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
+                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent">University of Houston | Computer Science Department</h1>
+                  <h2 className="text-gray-700 text-xl">Academic Support Assistant</h2>
                   <ul className="text-lg">
                     <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
                     <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
@@ -80,8 +80,8 @@ export const ExperienceSection = (props: ExperienceSectionProps) => {
               <div className="col-span-5 mt-24 flex justify-end">
                 <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!props.isVisible3 ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100'} ${props.isVisible3? 'delay-300' : ''} `}>
                   {/* Content goes here */}
-                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent" ref={props.myElementRef3}>Company Name</h1>
-                  <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
+                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent" ref={props.myElementRef3}>DM Clinical Research</h1>
+                  <h2 className="text-gray-700 text-xl">IT Intern</h2>
                   <ul className="text-lg">
                     <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
                     <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
@@ -107,8 +107,8 @@ export const ExperienceSection = (props: ExperienceSectionProps) => {
               <div className="col-span-5 mt-24 flex justify-start">
                 <div className={`bg-white w-[500px] min-h-44 rounded-lg shadow-md p-6 transform transition-all duration-500 ${!props.isVisible3 ? 'translate-x-full opacity-0' : 'translate-x-0 opacity-100'} ${props.isVisible3? 'delay-500' : ''} `}>
                   {/* Content goes here */}
-                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent" ref={props.myElementRef3}>Company Name</h1>
-                  <h2 className="text-gray-700 text-xl">Postion Name 1</h2>
+                  <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent" ref={props.myElementRef3}>The UPS Store #6735</h1>
+                  <h2 className="text-gray-700 text-xl">Centre Manager</h2>
                   <ul className="text-lg">
                     <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
                     <li className="">lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
