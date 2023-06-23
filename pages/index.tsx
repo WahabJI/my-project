@@ -29,28 +29,16 @@ export default function Home() {
         setIsVisible(true);
         console.log("projects visible")
       }
-      else{
-        setIsVisible(false);
-        console.log("projects not visible")
-      }
 
       if (myElementRef2.current && isElementVisible(myElementRef2.current)) {
         setIsVisible2(true);
         console.log("experience first half visible")
       }
-      // else{
-      //   setIsVisible2(false);
-      //   console.log("experience first half not visible")
-      // }
 
       if (myElementRef3.current && isElementVisible(myElementRef3.current)) {
         setIsVisible3(true);
         console.log("experience second half visible")
       }
-      // else{
-      //   setIsVisible3(false);
-      //   console.log("experience second half not visible")
-      // }
     }
 
     window.addEventListener("scroll", handleScroll);
