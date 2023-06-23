@@ -9,59 +9,50 @@ interface ExperienceSectionProps {
 
 export const ExperienceSectionResponsive = (props: ExperienceSectionProps) => {
     return(
-        <section id="experience" className="bg-gradient-to-b from-indigo-500 to-purple-500 min-h-screen">
+        <section id="experience" className="bg-gradient-to-b from-indigo-500 to-purple-500 min-h-1/2">
             <div className="flex justify-center items-center pt-4">
                 <h1 className="text-center text-4xl font-bold text-beige">Experience</h1>
             </div>
             
-            <div className="flex justify-center items-start mt-8 h-full">
-                <div className="w-1/5 px-4 pb-4">
-                    <div className="flex flex-col items-center">
-                        <div className="flex px-4 h-40 justify-center items-center">
-                            <div className="w-6 h-6 bg-white rounded-full"></div> {/* Timeline dot */}
-                            <div className="absolute w-2 h-40 bg-white my-2 rounded-full"></div> 
-                        </div>
-                        <div className="flex px-4 mt-4 h-40 justify-center items-center">
-                            <div className="w-6 h-6 bg-white rounded-full"></div> {/* Timeline dot */}
-                            <div className="absolute w-2 h-52 bg-white my-2 rounded-full"></div> 
-                        </div>
-                        <div className="flex px-4 mt-4 h-40 justify-center items-center">
-                            <div className="w-6 h-6 bg-white rounded-full"></div> {/* Timeline dot */}
-                            <div className="absolute w-2 h-52 bg-white my-2 rounded-full"></div> 
-                        </div>
-                        <div className="flex px-4 mt-4 h-40 justify-center items-center">
-                            <div className="w-6 h-6 bg-white rounded-full"></div> {/* Timeline dot */}
-                            <div className="absolute w-2 h-40 bg-white my-2 rounded-full"></div> 
-                        </div>
-                        {/* Add more timeline dots and lines as needed */}
-                    </div>
+
+            <div className="grid grid-cols-12 px-4 py-16">
+                <div className="flex justify-center items-center col-span-2">
+                    <div className="w-6 h-6 bg-white rounded-full"></div> {/* Timeline dot */}
+                    <div className="absolute w-2 h-80 md:h-64 bg-white my-2 rounded-full"></div>
                 </div>
-                
-                <div className="w-4/5 px-4">
-                    <div className="bg-white p-4 shadow-md h-40 rounded-xl">
-                        <h2 className="text-lg font-bold">Job Title <span className="text-gray-500 font-normal">| Date</span></h2>
-                        <p className="text-gray-600">Job Description</p>
-                        <p className="text-gray-600">lorem ipsum delor</p>
-                    </div>
-                    <div className="bg-white p-4 shadow-md h-40 mt-4 rounded-xl">
-                        <h2 className="text-lg font-bold">Job Title</h2>
-                        <p className="text-gray-600">Job Description</p>
-                        <p className="text-gray-600">lorem ipsum delor</p>
-                    </div>
-                    <div className="bg-white p-4 shadow-md min-h-40 mt-4 rounded-xl">
-                        <h2 className="text-lg font-bold">Job Title</h2>
-                        <p className="text-gray-600">Job Description</p>
-                        <p className="text-gray-600">Collaborated with the IT team to implement and deploy a streamlined ticketing system, enhancing efficiency in resolving daily operational issues.
-Facilitated smooth onboarding of more than 30 new employees monthly by creating credentials and configuring work laptops.
-Delivered exceptional level 1 technical support, promptly addressing software troubleshooting and resolving issues to ensure seamless employee productivity.</p>
-                    </div>
-                    <div className="bg-white p-4 shadow-md h-40 mt-4 rounded-xl">
-                        <h2 className="text-lg font-bold">Job Title</h2>
-                        <p className="text-gray-600">Job Description</p>
-                        <p className="text-gray-600">lorem ipsum delor</p>
-                    </div>
+                <div className="bg-white p-4 shadow-md min-h-40 rounded-xl col-span-10">
+                    <h2 className="text-lg font-bold">Plug Power <span className="text-gray-900 font-normal">| February 2023 - Present</span></h2>
+                    <p className="text-gray-700 italic">Software Engineering Intern</p>
+                    <p className="">I am currently developing a web app for seamless data entry, manipulation and comprehensive project management. It is currently slated to seamlessly integrate with PowerBI for powerful data visualization capabilities.</p>
+                </div>
+                <div className="flex justify-center items-center col-span-2">
+                    <div className="w-6 h-6 bg-white rounded-full"></div> {/* Timeline dot */}
+                    <div className="absolute w-2 h-1/2 md:h-64 bg-white my-2 rounded-full"></div>
+                </div>
+                <div className="bg-white p-4 shadow-md min-h-40 mt-4 rounded-xl col-span-10">
+                    <h2 className="text-lg font-bold">UH Computer Science Department <span className="text-gray-900 font-normal">| January 2023 - May 2023</span></h2>
+                    <p className="text-gray-700">Academic Support Assistant</p>
+                    <p className="">I worked with the course intructor to deliver impactful instructions to over 150 students. I also held dedicated office hours to provide constructive feedback and comprehensive code reviews to ensure continuous growth.</p>
+                </div>
+                <div className="flex justify-center items-center col-span-2">
+                    <div className="w-6 h-6 bg-white rounded-full"></div> {/* Timeline dot */}
+                    <div className="absolute w-2 h-2/3 md:h-64 bg-white my-2 rounded-full"></div>
+                </div>
+                <div className="bg-white p-4 shadow-md min-h-40 mt-4 rounded-xl col-span-10">
+                    <h2 className="text-lg font-bold">DM Clinical Research <span className="text-gray-900 font-normal">| September 2022 - December 2022</span></h2>
+                    <p className="text-gray-700">IT Intern</p>
+                    <p className="">Together with the IT team, we deployed a streamlined ticketing system that significantly improved issue resolution efficiency. Additionally, I played a crucial role in facilitating the smooth onboarding of over 30 new employees each month, while providing exceptional level 1 technical support.</p>
+                </div>
+                <div className="flex justify-center items-center col-span-2">
+                    <div className="w-6 h-6 bg-white rounded-full"></div> {/* Timeline dot */}
+                    <div className="absolute w-2 h-80 md:h-64 bg-white my-2 rounded-full"></div>
+                </div>
+                <div className="bg-white p-4 shadow-md min-h-40 mt-4 rounded-xl col-span-10">
+                    <h2 className="text-lg font-bold">The UPS Store #6735 <span className="text-gray-900 font-normal">| April 2021 - August 2022</span></h2>
+                    <p className="text-gray-700">Center Manager</p>
+                    <p className="">Led operations, fostering vendor relationships and ensuring customer satisfaction during a seamless franchise transition. I also played a key role in team recruitment and management to drive outstanding results.</p>
+                </div>
                 {/* Add more job cards as needed */}
-                </div>
             </div>
         </section>
 
