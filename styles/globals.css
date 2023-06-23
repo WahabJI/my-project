@@ -10,18 +10,14 @@
 ::-webkit-scrollbar-thumb{
   background: #023047;
   border-radius: 3px; 
-  
-}
 
+}
 ::-webkit-scrollbar{
-  width:12px;
+  width:0px;
 }
-
-::-webkit-scrollbar * {
-  width:12px;
-  background: transparent;
+::-webkit-scrollbar-track{
+  @apply bg-transparent;
 }
-
 body{
   overflow: overlay;
 }
@@ -35,17 +31,6 @@ body{
 /* arrow animation + choose direction */
 .arrow-transitions {
   transform: translate(-50%, -50%);
-}
-
-/* base */
-html {
-  height: 100%;
-}
-
-body {
-  background: #000;
-  position: relative;
-  height: 100%;
 }
 
 /* arrows */
