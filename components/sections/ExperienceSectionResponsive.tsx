@@ -48,10 +48,12 @@ export const ExperienceSectionResponsive = (props: ExperienceSectionProps) => {
                         <p className="text-gray-600">Job Description</p>
                         <p className="text-gray-600">lorem ipsum delor</p>
                     </div>
-                    <div className="bg-white p-4 shadow-md h-40 mt-4 rounded-xl">
+                    <div className="bg-white p-4 shadow-md min-h-40 mt-4 rounded-xl">
                         <h2 className="text-lg font-bold">Job Title</h2>
                         <p className="text-gray-600">Job Description</p>
-                        <p className="text-gray-600">lorem ipsum delor</p>
+                        <p className="text-gray-600">Collaborated with the IT team to implement and deploy a streamlined ticketing system, enhancing efficiency in resolving daily operational issues.
+Facilitated smooth onboarding of more than 30 new employees monthly by creating credentials and configuring work laptops.
+Delivered exceptional level 1 technical support, promptly addressing software troubleshooting and resolving issues to ensure seamless employee productivity.</p>
                     </div>
                     <div className="bg-white p-4 shadow-md h-40 mt-4 rounded-xl">
                         <h2 className="text-lg font-bold">Job Title</h2>
