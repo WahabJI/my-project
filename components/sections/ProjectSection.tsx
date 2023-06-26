@@ -26,7 +26,7 @@ export const ProjectSection = (props: ExperienceSectionProps) => {
             </div>
 
             <p className="text-sm md:text-lg px-4 mt-4 ml-1">
-              StudyUP was my first experience with the Discord API and TypeScript. It's a Discord bot that helps users create and track events, join study groups, and reserve study rooms at MD Anderson Library. The main goal of the bot is to assist students in staying organized and on top of their work by organizing events and study groups. This project was not only my first time working with others but also my first time working with these technologies, making it a valuable learning experience.
+              StudyUP was my first experience with the Discord API and TypeScript. It&apos;s a Discord bot that helps users create and track events, join study groups, and reserve study rooms at MD Anderson Library. The main goal of the bot is to assist students in staying organized and on top of their work by organizing events and study groups. This project was not only my first time working with others but also my first time working with these technologies, making it a valuable learning experience.
             </p>
             <Link target="_blank" href="https://github.com/WahabJI/StudyUp">
               <div className="px-4 pt-2">
