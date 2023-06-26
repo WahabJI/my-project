@@ -17,7 +17,7 @@ export const ProjectSection = (props: ExperienceSectionProps) => {
         <div className="flex flex-col lg:flex-row justify-center my-16 items-center mx-auto lg:space-x-6 xl:space-x-12 space-y-12 lg:space-y-0" ref={props.myElementRef}>
 
           {/* First div container */}
-          <div className={`bg-white rounded-lg shadow-md w-5/6 h-fit md:w-2/3 lg:w-80 xl:w-1/5 p-4 transform transition-all duration-500 delay-300 ${props.isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+          <div className={`bg-white rounded-lg shadow-md w-5/6 h-fit md:w-2/3 lg:w-80 xl:w-1/4 p-4 transform transition-all duration-500 delay-300 ${props.isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <h1 className="bg-gradient-to-r from-cblue to-indigo-500 bg-clip-text text-transparent text-center text-lg md:text-2xl ">StudyUP</h1>
 
             <div className="flex justify-center items-center mt-4">
@@ -35,7 +35,7 @@ export const ProjectSection = (props: ExperienceSectionProps) => {
           </div>
 
           {/* Second div container */}
-          <div className={`bg-white rounded-lg shadow-md w-5/6 h-fit md:w-2/3 lg:w-80 xl:w-1/5 p-4 transform transition-all duration-500 delay-500 ${props.isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+          <div className={`bg-white rounded-lg shadow-md w-5/6 h-fit md:w-2/3 lg:w-80 xl:w-1/4 p-4 transform transition-all duration-500 delay-500 ${props.isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <h1 className="bg-gradient-to-r from-cblue to-indigo-500 bg-clip-text text-transparent text-center text-lg md:text-2xl ">Fuel Quoter</h1>
 
             <div className="flex justify-center items-center mt-4">
@@ -53,7 +53,7 @@ export const ProjectSection = (props: ExperienceSectionProps) => {
           </div>
 
           {/* Third div container */}
-          <div className={`bg-white rounded-lg shadow-md w-5/6 h-fit md:w-2/3 lg:w-80 xl:w-1/5 p-4 transform transition-all duration-500 delay-700 ${props.isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+          <div className={`bg-white rounded-lg shadow-md w-5/6 h-fit md:w-2/3 lg:w-80 xl:w-1/4 p-4 transform transition-all duration-500 delay-700 ${props.isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <h1 className="bg-gradient-to-r from-cblue to-indigo-500 bg-clip-text text-transparent text-center text-lg md:text-2xl ">This Website!</h1>
 
             <div className="flex justify-center items-center mt-4">
