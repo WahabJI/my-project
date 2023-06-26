@@ -1,5 +1,6 @@
 import React from 'react';
-
+import Image from 'next/image';
+import Link from 'next/link';
 interface ExperienceSectionProps {
   myElementRef: React.MutableRefObject<null>;
   isVisible: boolean;
@@ -24,10 +25,15 @@ export const ProjectSection = (props: ExperienceSectionProps) => {
               <hr className="border-gray-300 border-2 rounded-lg w-2/4" />
             </div>
 
-            <p className="text-sm md:text-lg px-4 mt-4">
+            <p className="text-sm md:text-lg px-4 mt-4 ml-1">
               StudyUP was my first experience with the Discord API and TypeScript. It's a Discord bot that helps users create and track events, join study groups, and reserve study rooms at MD Anderson Library. The main goal of the bot is to assist students in staying organized and on top of their work by organizing events and study groups. This project was not only my first time working with others but also my first time working with these technologies, making it a valuable learning experience.
             </p>
-            <div className="flex flex-wrap p-4">
+            <Link target="_blank" href="https://github.com/WahabJI/StudyUp">
+              <div className="px-4 pt-2">
+                <img className="hover:scale-105 duration-300 cursor-pointer ml-1" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/>
+              </div>
+            </Link>
+            <div className="flex flex-wrap px-4 py-2">
               <img className="m-1" src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white"/>
               <img className="m-1" src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"/> 
               <img className="m-1" src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"/>
@@ -42,10 +48,15 @@ export const ProjectSection = (props: ExperienceSectionProps) => {
               <hr className="border-gray-300 border-2 rounded-lg w-2/4" />
             </div>
 
-            <p className="text-sm md:text-lg px-4 mt-4">             
+            <p className="text-sm md:text-lg px-4 mt-4 ml-1">             
               Fuel Qouter marked one of my initial ventures into web development using NextJS. This web application offers fuel quotes to users by considering their location and past interactions with the company. The project provided a valuable opportunity for me to learn about backend development and the integration between frontend and backend components. Moreover, it served as a fantastic introduction to NextJS and TailwindCSS, further enriching my skillset in web development.
             </p>
-            <div className="flex flex-wrap p-4">
+            <Link target="_blank" href="https://github.com/WahabJI/Fuel-Quoter">
+              <div className="px-4 pt-2">
+                <img className="hover:scale-105 duration-300 cursor-pointer ml-1" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/>
+              </div>
+            </Link>
+            <div className="flex flex-wrap px-4 py-2">
               <img className="m-1" src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white"/>
               <img className="m-1" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
               <img className="m-1" src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/> 
@@ -60,10 +71,15 @@ export const ProjectSection = (props: ExperienceSectionProps) => {
               <hr className="border-gray-300 border-2 rounded-lg w-2/4" />
             </div>
 
-            <p className="text-sm md:text-lg px-4 mt-4">
+            <p className="text-sm md:text-lg px-4 mt-4 ml-1">
               Developing this website served as an opportunity for me to enhance my proficiency in front-end web development. My primary intention was to create a website that would challenge my design skills, which I had previously considered subpar. Throughout this project, I gained valuable insights into the significance of UI/UX and acquired the know-how to craft websites that are visually appealing and highly functional. Ultimately, it proved to be an immensely rewarding learning experience, and I am genuinely satisfied with the final outcome.
             </p>
-            <div className="flex flex-wrap p-4">
+            <Link target="_blank" href="https://github.com/WahabJI/my-project">
+              <div className="px-4 pt-2">
+                <img className="hover:scale-105 duration-300 cursor-pointer ml-1" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/>
+              </div>
+            </Link>
+            <div className="flex flex-wrap px-4 py-2">
               <img className="m-1" src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white"/>
               <img className="m-1" src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"/>
               <img className="m-1" src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/> 
