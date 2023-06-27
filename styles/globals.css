@@ -26,7 +26,7 @@
   display: block;
   width: 100px;
   height: 100px;
-  position: absolute;
+  position: relative;
   bottom: 3vh;
   left: 50%;
   transform: translateX(-50%) rotateZ(0deg);
@@ -84,7 +84,30 @@
   top: 85%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px){
+  .arrow-container {
+    width: 100px;
+    height: 75px;
+  }
+  
+  .arrow:before,
+  .arrow:after {
+    width: 3px;
+    height: 35px;
+  }
+  
+  .arrow:nth-child(1) {
+    opacity: 1;
+    top: 50%;
+  }
+
+  .arrow:nth-child(2),
+.arrow:nth-child(3) {
+  display: none;
+}
+}
+
+@media screen and (max-height: 780px){
   .arrow-container {
     width: 100px;
     height: 75px;
