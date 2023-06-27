@@ -6,21 +6,9 @@
   scroll-behavior: smooth;
 }
 
-
-/* ::-webkit-scrollbar-thumb{
-  background: #023047;
-  border-radius: 3px; 
-
-} */
 ::-webkit-scrollbar{
   width:0px;
 }
-/* ::-webkit-scrollbar-track{
-  @apply bg-transparent;
-}
-body{
-  overflow: overlay;
-} */
 
 :root {
   --total-arrows: 3;

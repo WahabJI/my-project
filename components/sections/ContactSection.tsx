@@ -1,5 +1,5 @@
 import React, { useState} from 'react'
-
+import router from 'next/router'
 export const ContactSection = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -16,7 +16,9 @@ export const ContactSection = () => {
       method: 'POST',
       body: formData
     })
-    const res = await req.json()
+    if(req.status === 200) {
+      router.push('/Success')
+    }
   }
   return (
     <section id="contact" className="h-screen">
