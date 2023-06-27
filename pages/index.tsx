@@ -6,6 +6,16 @@ import {HomeSection} from '../components/sections/HomeSection';
 import {ExperienceSection} from '../components/sections/ExperienceSection';
 import {ContactSection} from '../components/sections/ContactSection';
 import { ExperienceSectionResponsive } from '@/components/sections/ExperienceSectionResponsive';
+
+export const metadata = {
+  title: "Wahab Javed",
+  description: "Software Engineer and Student",
+  openGraph: {
+    images: "./public/rubik.png" 
+  }
+}
+
+
 function isElementVisible(element: HTMLElement): boolean {
   const rect = element.getBoundingClientRect();
   const windowHeight =
@@ -27,17 +37,17 @@ export default function Home() {
     function handleScroll() {
       if (myElementRef.current && isElementVisible(myElementRef.current)) {
         setIsVisible(true);
-        console.log("projects visible")
+        // console.log("projects visible")
       }
 
       if (myElementRef2.current && isElementVisible(myElementRef2.current)) {
         setIsVisible2(true);
-        console.log("experience first half visible")
+        // console.log("experience first half visible")
       }
 
       if (myElementRef3.current && isElementVisible(myElementRef3.current)) {
         setIsVisible3(true);
-        console.log("experience second half visible")
+        // console.log("experience second half visible")
       }
     }
 
