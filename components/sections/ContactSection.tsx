@@ -12,7 +12,7 @@ export const ContactSection = () => {
     formData.append('email', email)
     formData.append('message', message)
     console.log(formData)
-    const req = await fetch('https://getform.io/f/b3858fa8-f119-4eca-8bb7-72aaf2e5c18a', {
+    const req = await fetch(process.env.GETFORMURL!, {
       method: 'POST',
       body: formData
     })
