@@ -7,15 +7,6 @@ import {ExperienceSection} from '../components/sections/ExperienceSection';
 import {ContactSection} from '../components/sections/ContactSection';
 import { ExperienceSectionResponsive } from '@/components/sections/ExperienceSectionResponsive';
 
-export const metadata = {
-  title: "Wahab Javed",
-  description: "Software Engineer and Student",
-  openGraph: {
-    images: "./public/rubik.png" 
-  }
-}
-
-
 function isElementVisible(element: HTMLElement): boolean {
   const rect = element.getBoundingClientRect();
   const windowHeight =
@@ -73,6 +64,9 @@ export default function Home() {
     <>
       <Head>
         <title>Wahab Javed</title>
+        <meta property="og:title" content="Wahab Javed"/>
+        <meta property="og:description" content="Software Engineer and Student"/>
+        <meta property="og:image" content="/rubik.png"/>
         <meta name="Personal Portfolio Website" content="Made by Wahab" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/rubik.png" />
