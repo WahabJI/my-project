@@ -1,11 +1,11 @@
 import React from 'react';
 
 export const Hamburger = () => {
-    const Open = (e: any) => {
+    const Open = (e: React.MouseEvent<HTMLButtonElement>) => {
         const ham = document.getElementById("hammm");
         ham!.classList.toggle("w-[100%]");
     }
-    const Close = (e: any) => {
+    const Close = (e: React.MouseEvent<HTMLAnchorElement> | React.MouseEvent<HTMLButtonElement>) => {
         const ham = document.getElementById("hammm");
         ham!.classList.toggle("w-[100%]");
     }
