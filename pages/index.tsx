@@ -65,7 +65,7 @@ export default function Home() {
         <title>Wahab Javed</title>
         <meta name="Personal Portfolio Website" content="Made by Wahab" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/rubik.png" />
       </Head> 
       <main className="">
         {/* HOME SECTION */}
