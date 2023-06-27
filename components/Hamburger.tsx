@@ -44,7 +44,7 @@ export const Hamburger = () => {
                 </li>
 
                 <li>
-                    <a onClick={Close} href="#"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Contact Me</a>
+                    <a onClick={Close} href="#contact"className="flex justify-center items-center w-40 h-14 hover:bg-light-blue/25 text-beige">Contact Me</a>
                 </li>
             </ul>
             <div className=" absolute top-2 right-2 cursor-pointer">

@@ -8,7 +8,7 @@ interface ExperienceSectionProps {
 
 export const ProjectSection = (props: ExperienceSectionProps) => {
   return (
-    <section id="projects" className="bg-gradient-to-b from-sky-500 to-indigo-500 min-h-screen p-20">
+    <section id="projects" className="bg-gradient-to-b from-sky-500 to-indigo-500 min-h-screen pt-20">
       {/* div container for the title at the top */}
       <div className="flex justify-center items-center pt-4">
         <h1 className="text-4xl md:text-6xl text-beige font-bold">Projects</h1>
