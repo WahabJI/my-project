@@ -71,7 +71,7 @@ export const HomeSection = () => {
             </div>
           </Link>
 
-          <Link target="_blank" href="/RESUME_WJ_01-20-2023.pdf">
+          <Link target="_blank" href="/Resume.pdf">
             <div className="flex justify-center items-center w-20 h-20 lg:w-40 lg:h-40 hover:bg-light-blue">
               <Image 
                 src="/newspaper-outline-light.svg" alt="Resume Logo" width={40} height={40}
