@@ -32,7 +32,7 @@ export const ExperienceSectionResponsive = (props: ExperienceSectionProps) => {
                 <div className="bg-white p-4 shadow-md min-h-40 mt-4 rounded-xl col-span-10">
                     <h2 className="text-lg font-bold">UH Computer Science Department <span className="text-gray-900 font-normal">| January 2023 - May 2023</span></h2>
                     <p className="text-gray-700 italic">Academic Support Assistant</p>
-                    <p className="">I worked with the course intructor to deliver impactful instructions to over 150 students. I also held dedicated office hours to provide constructive feedback and comprehensive code reviews to ensure continuous growth.</p>
+                    <p className="">I worked with the course instructor to deliver impactful instructions to over 150 students. I also held dedicated office hours to provide constructive feedback and comprehensive code reviews to ensure continuous growth.</p>
                 </div>
                 <div className="flex justify-center items-center col-span-2">
                     <div className="absolute w-6 h-6 bg-white rounded-full"></div> {/* Timeline dot */}
