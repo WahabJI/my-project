@@ -54,7 +54,7 @@ export const ExperienceSection = (props: ExperienceSectionProps) => {
                   <h1 className="text-3xl bg-gradient-to-r from-indigo-500 to-violet-300 bg-clip-text text-transparent py-0.5">University of Houston | Computer Science Department</h1>
                   <h2 className="text-gray-700 text-xl italic">Academic Support Assistant</h2>
                   <div className="text-lg">
-                    <p>I worked with the course intructor to deliver impactful instructions to over 150 students. I also held dedicated office hours to provide constructive feedback and comprehensive code reviews to ensure continuous growth.</p>
+                    <p>I worked with the course instructor to deliver impactful instructions to over 150 students. I also held dedicated office hours to provide constructive feedback and comprehensive code reviews to ensure continuous growth.</p>
                   </div>
                 </div>
               </div>
